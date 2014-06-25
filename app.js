@@ -11,7 +11,7 @@ app.configure(function() {
     app.use(express.methodOverride());
 
     app.use(app.router);
-    app.use(express.static(__dirname + "/dist"));
+    app.use(express.static(__dirname + "/lib/dist"));
 });
 
 http.createServer(app).listen(app.get('port'), function() {

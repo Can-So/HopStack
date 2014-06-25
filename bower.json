@@ -1,6 +1,6 @@
 {
-  "name": "rainbow",
-  "version": "1.0.0",
+  "name": "bearded-robot-proto",
+  "version": "0.1.4",
   "dependencies": {
     "jquery": "~2.1.0",
     "angular": "~1.2.0",
