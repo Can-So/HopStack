@@ -298,4 +298,4 @@ module.exports = (grunt) ->
 
     grunt.registerTask "default", ["server"]
 
-    # grunt.registerTask "heroku:development", ["clean", "less", "mincss"]
+    grunt.registerTask "heroku:development", ["clean", "less", "mincss"]
