@@ -27,6 +27,11 @@
     "grunt-contrib-uglify": "~0.4.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "*",
+    "npm": "*
+  },
+  "repository": { 
+    "type" : "git",
+    "url" : "git@github.com:thinq4yourself/bearded-robot-proto.git"
   }
 }
