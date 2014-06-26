@@ -3,7 +3,8 @@ bearded-robot-proto
 
 ##Bearded Robot Prototype App
 
-Setup Docs: https://preview.codenvy.com/ide/thinq4yourself/_htmlapprunner/app-lex41ea6zghpmbpu/docs/index.html
+Setup Docs: http://bearded-robot-proto.herokuapp.com/docs/
+App URL: http://bearded-robot-proto.herokuapp.com
 
 Help With Heroku, Bower and Grunt: 
 
