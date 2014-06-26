@@ -1,4 +1,4 @@
-h"use strict"
+"use strict"
 LIVERELOAD_PORT = 35728
 lrSnippet = require("connect-livereload")(port: LIVERELOAD_PORT)
 
@@ -298,4 +298,4 @@ module.exports = (grunt) ->
 
     grunt.registerTask "default", ["server"]
 
-    #grunt.registerTask "heroku:development", ["clean", "less", "mincss"]
+    # grunt.registerTask "heroku:development", ["clean", "less", "mincss"]
