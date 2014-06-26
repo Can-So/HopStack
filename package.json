@@ -28,7 +28,7 @@
   },
   "engines": {
     "node": "*",
-    "npm": "*
+    "npm": "*"
   },
   "repository": { 
     "type" : "git",
