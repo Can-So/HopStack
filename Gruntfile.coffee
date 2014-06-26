@@ -298,5 +298,6 @@ module.exports = (grunt) ->
 
     grunt.registerTask "default", ["server"]
 
-    grunt.registerTask "heroku:production", ["clean:dist", "useminPrepare", "concurrent:lessDist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
     grunt.registerTask "heroku:development", ["clean:dist", "useminPrepare", "concurrent:dist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
+
+    grunt.registerTask "heroku:production", ["clean:dist", "useminPrepare", "concurrent:lessDist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
