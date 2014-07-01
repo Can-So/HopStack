@@ -52,13 +52,13 @@
             <section class="panel panel-default">
                 <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Popover</div>
                 <div class="panel-body text-center">
-                    <button popover-placement="top" popover-title="The Popover Title" popover="On the Top! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-danger btn-gap">Popover on Top</button>
+                    <button popover-placement="top" popover-title="The Popover Title" popover="On the Top! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-primary btn-gap">Popover on Top</button>
                     <br>
-                    <button popover-placement="right" popover-title="The Popover Title" popover="On the Right! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-warning btn-gap">Popover on Right</button>
+                    <button popover-placement="right" popover-title="The Popover Title" popover="On the Right! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-primary btn-gap">Popover on Right</button>
                     <br>
-                    <button popover-placement="bottom" popover-title="The Popover Title" popover="On the Bottom! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-info btn-gap">Popover on Bottom</button>
+                    <button popover-placement="bottom" popover-title="The Popover Title" popover="On the Bottom! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-primary btn-gap">Popover on Bottom</button>
                     <br>
-                    <button popover-placement="left" popover-title="The Popover Title" popover="On the Left! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-success btn-gap">Popover on Left</button>
+                    <button popover-placement="left" popover-title="The Popover Title" popover="On the Left! Here' goes the popover content..." popover-append-to-body="true" class="btn btn-w-lg btn-primary btn-gap">Popover on Left</button>
                     <br>
                     <button popover="On mouse enter!" popover-trigger="mouseenter" class="btn btn-w-lg btn-primary btn-gap">Popover on Mouseenter</button>
                     <div class="divider"></div>
@@ -76,13 +76,13 @@
                     <br>
                     <button class="btn btn-w-lg btn-primary btn-gap" tooltip-placement="left" tooltip="On the Left!" tooltip-append-to-body="true">Tooltip on Left</button>
                     <br>
-                    <button class="btn btn-w-lg btn-success btn-gap" tooltip-placement="right" tooltip="On the Right!" tooltip-append-to-body="true">Tooltip on Right</button>
+                    <button class="btn btn-w-lg btn-primary btn-gap" tooltip-placement="right" tooltip="On the Right!" tooltip-append-to-body="true">Tooltip on Right</button>
                     <br>
-                    <button class="btn btn-w-lg btn-info btn-gap" tooltip-placement="bottom" tooltip="On the Bottom!" tooltip-append-to-body="true">Tooltip on Bottom</button>
+                    <button class="btn btn-w-lg btn-primary btn-gap" tooltip-placement="bottom" tooltip="On the Bottom!" tooltip-append-to-body="true">Tooltip on Bottom</button>
                     <br>
-                    <button class="btn btn-w-lg btn-warning btn-gap" tooltip-popup-delay='1000' tooltip='Appears with delay' tooltip-append-to-body="true">Tooltip Delayed</button>
+                    <button class="btn btn-w-lg btn-primary btn-gap" tooltip-popup-delay='1000' tooltip='Appears with delay' tooltip-append-to-body="true">Tooltip Delayed</button>
                     <br>
-                    <button class="btn btn-w-lg btn-danger btn-gap" tooltip-animation="false" tooltip="I don't fade. :-(" tooltip-append-to-body="true">Tooltip without Animation</button>
+                    <button class="btn btn-w-lg btn-primary btn-gap" tooltip-animation="false" tooltip="I don't fade. :-(" tooltip-append-to-body="true">Tooltip without Animation</button>
                 </div>
             </section>
             <!-- end Tooltip -->
@@ -99,10 +99,7 @@
             <div class="page-header">
                 <h3>Static Progressbar</h3>
             </div>
-            <progressbar class="progressbar-sm progress-rounded" value="34" type="success"></progressbar>
             <progressbar class="progressbar-sm progress-rounded" value="68" type="info"></progressbar>
-            <progressbar class="progressbar-sm progress-rounded" value="52" type="warning"></progressbar>
-            <progressbar class="progressbar-sm progress-rounded" value="77" type="danger"></progressbar>
             <p class="text-muted">Stacked Progress Bars</p>
             <progress class="progressbar-sm progress-rounded">
                 <bar value="40" type="success"></bar>
@@ -113,10 +110,7 @@
             <div class="page-header">
                 <h3>Striped Progressbar</h3>
             </div>
-            <progressbar class="progressbar-sm progress-rounded progress-striped" value="34" type="success"></progressbar>
             <progressbar class="progressbar-sm progress-rounded progress-striped" value="68" type="info"></progressbar>
-            <progressbar class="progressbar-sm progress-rounded progress-striped" value="52" type="warning"></progressbar>
-            <progressbar class="progressbar-sm progress-rounded progress-striped" value="77" type="danger"></progressbar>
             <p class="text-muted">Animated Progress Bars</p>
             <progressbar class="progressbar-sm progress-rounded progress-striped active" value="55"></progressbar>
             <progress class="progressbar-sm progress-rounded progress-striped active">
@@ -131,7 +125,7 @@
             <progressbar class="progress-rounded" max="max" value="dynamic"><span>{{dynamic}} / {{max}}</span></progressbar>
 
             <p class="text-muted">No animation</p>
-            <progressbar class="progress-rounded" animate="false" value="dynamic" type="success"><b>{{dynamic}}%</b></progressbar>
+            <progressbar class="progress-rounded" animate="false" value="dynamic" type=""><b>{{dynamic}}%</b></progressbar>
 
             <p class="text-muted">Object <em>(changes type based on value)</em></p>
             <progressbar class="progress-striped progress-rounded active" value="dynamic" type="{{type}}">{{type}} <i ng-show="showWarning">!!! Watch out !!!</i></progressbar>
@@ -184,10 +178,10 @@
     <section class="panel panel-default">
         <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Notify</div>
         <div class="panel-body" data-ng-controller="NotifyCtrl">
-            <button class="btn btn-w-md btn-gap btn-info" data-ng-click="notify('info')">info message</button>
-            <button class="btn btn-w-md btn-gap btn-success" data-ng-click="notify('success')">success message</button>
-            <button class="btn btn-w-md btn-gap btn-warning" data-ng-click="notify('warning')">warning message</button>
-            <button class="btn btn-w-md btn-gap btn-danger" data-ng-click="notify('error')">error message</button>
+            <button class="btn btn-w-md btn-gap btn-primary" data-ng-click="notify('info')">info message</button>
+            <button class="btn btn-w-md btn-gap btn-primary" data-ng-click="notify('success')">success message</button>
+            <button class="btn btn-w-md btn-gap btn-primary" data-ng-click="notify('warning')">warning message</button>
+            <button class="btn btn-w-md btn-gap btn-primary" data-ng-click="notify('error')">error message</button>
             <div class="callout callout-info">
                 <p>Notification will show in lower right corner.</p>
             </div>
@@ -228,70 +222,6 @@
         </div>
     </section>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="ui-tab-container">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                    
-                </div>
-                <div class="col-md-6">
-                    <div class="ui-tab-container ui-tab-dark">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                      
-                </div>
-            </div>
-
-            <div class="divider divider-md"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="ui-tab-container ui-tab-success">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                    
-                </div>
-                <div class="col-md-6">
-                    <div class="ui-tab-container ui-tab-info">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                      
-                </div>
-            </div>
-
-            <div class="divider divider-md"></div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="ui-tab-container ui-tab-warning">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                    
-                </div>
-                <div class="col-md-6">
-                    <div class="ui-tab-container ui-tab-danger">
-                        <tabset class="ui-tab">
-                            <tab heading="Home">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, aspernatur, eum fugit officiis numquam iste aut illo quos pariatur Eligendi, veniam, accusamus. </tab>
-                            <tab heading="Quod ea">Quod ea vel dolores earum veritatis quae sunt tempore odit molestias sit optio quaerat cupiditate iure repudiandae illum doloremque consectetur incidunt!</tab>
-                            <tab heading="Earum sequi">Blanditiis tenetur harum distinctio voluptate asperiores non magnam delectus. Consequatur, deleniti rem magnam possimus necessitatibus iusto suscipit mollitia rerum.</tab>
-                        </tabset>
-                    </div>                      
-                </div>
-            </div>
             <div class="divider divider-lg"></div>
     <!-- end Tab -->
 
@@ -323,8 +253,8 @@
                     <button class="btn btn-gap-v btn-primary" ng-click="open()">Open me!</button>
                     <button class="btn btn-gap-v btn-info" ng-click="open()">Open me!</button>
                     <button class="btn btn-gap-v btn-warning" ng-click="open()">Open me!</button>
-                    <button class="btn btn-gap-v btn-success" ng-click="open()">Open me!</button>
-                    <button class="btn btn-gap-v btn-danger" ng-click="open()">Open me!</button>
+                    <button class="btn btn-gap-v btn-info" ng-click="open()">Open me!</button>
+                    <button class="btn btn-gap-v btn-primary" ng-click="open()">Open me!</button>
                     <div class="divider"></div>
                     <div class="callout callout-info">
                         <p>Selection from a modal: <strong>{{ selected }}</strong></p>
@@ -413,97 +343,6 @@
     <!-- end Alert -->
 
 
-    <!-- Ribbons -->
-    <div class="panel panel-default">
-        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbons</div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container ui-ribbon-primary">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon-primary</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container ui-ribbon-success">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon-success</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container ui-ribbon-info">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon-info</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container ui-ribbon-warning">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon-warning</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="panel panel-default ui-ribbon-container ui-ribbon-danger">
-                        <div class="ui-ribbon-wrapper">
-                            <div class="ui-ribbon">
-                                30% Off
-                            </div>
-                        </div>
-                        <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Ribbon-danger</div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti rerum reprehenderit ipsam natus saepe. Recusandae, itaque nulla in illum dolorum ea eveniet quaerat ipsa placeat magni commodi obcaecati mollitia necessitatibus?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!-- end Ribbons -->
 
 
     <!-- Accordion -->
@@ -513,7 +352,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <p><strong>Open only one at a time?</strong></p>
-                    <label class="switch switch-success"><input type="checkbox" ng-model="oneAtATime"><i></i></label>
+                    <label class="switch switch-info"><input type="checkbox" ng-model="oneAtATime"><i></i></label>
                     <div class="divider divider-lg"></div>
                 </div>
                 <div class="col-lg-9">

@@ -20,6 +20,7 @@ module.exports = (grunt) ->
     yeomanConfig =
         app: "client"
         dist: "dist"
+        lib: "lib/dist" 
 
     try
         yeomanConfig.app = require("./bower.json").appPath or yeomanConfig.app
@@ -101,7 +102,7 @@ module.exports = (grunt) ->
                 imagesDir: "<%= yeoman.app %>/styles/ui/images/"
                 javascriptsDir: "<%= yeoman.app %>/scripts"
                 fontsDir: "<%= yeoman.app %>/fonts"
-                importPath: "<%= yeoman.app %>/bower_components"
+                importPath: "<%= yeoman.lib %>/bower_components"
                 httpImagesPath: "styles/ui/images/"
                 httpGeneratedImagesPath: "styles/ui/images/"
                 httpFontsPath: "fonts"
@@ -299,3 +300,6 @@ module.exports = (grunt) ->
     grunt.registerTask "default", ["server"]
 
     grunt.registerTask "heroku:production", ["clean", "less", "mincss", "uglify"]
+    grunt.registerTask "heroku:development", ["clean:dist", "useminPrepare", "concurrent:dist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
+
+    grunt.registerTask "heroku:production", ["clean:dist", "useminPrepare", "concurrent:lessDist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]

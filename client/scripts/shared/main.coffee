@@ -9,8 +9,8 @@ angular.module('app.controllers', [])
         $window = $(window)
 
         $scope.main =
-            brand: 'Rainbow'
-            name: 'Lisa Doe' # those which uses i18n directive can not be replaced for now.
+            brand: 'Simflofy'
+            name: 'Bearded Robot' # those which uses i18n directive can not be replaced for now.
 
 
         $scope.pageTransitionOpts = [
@@ -31,7 +31,7 @@ angular.module('app.controllers', [])
             layout: 'wide'                                  # 'boxed', 'wide'
             menu: 'vertical'                                # 'horizontal', 'vertical'
             fixedHeader: true                               # true, false
-            fixedSidebar: false                             # true, false
+            fixedSidebar: true                             # true, false
             pageTransition: $scope.pageTransitionOpts[0]    # unlimited, check out "_animation.scss"
 
         $scope.$watch('admin', (newVal, oldVal) ->
@@ -58,13 +58,25 @@ angular.module('app.controllers', [])
             return
         , true)
 
+
         $scope.color =
-            primary:    '#248AAF'
-            success:    '#3CBC8D'
-            info:       '#29B7D3'
-            infoAlt:    '#666699'
-            warning:    '#FAC552'
-            danger:     '#E9422E'
+            primary:    '#efefef'
+            success:    '#efefef'
+            info:       '#efefef'
+            infoAlt:    '#efefef'
+            warning:    '#efefef'
+            danger:     '#efefef'
+
+# edited out for demo purposes - PLEASE REMOVE when completed with style guide
+#        $scope.color =
+#            primary:    '#248AAF'
+#            success:    '#3CBC8D'
+#            info:       '#29B7D3'
+#            infoAlt:    '#666699'
+#            warning:    '#FAC552'
+#            danger:     '#E9422E'
+#
+
 
 ])
 
