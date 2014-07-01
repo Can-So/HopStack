@@ -297,3 +297,5 @@ module.exports = (grunt) ->
     grunt.registerTask "lessBuild", ["clean:dist", "useminPrepare", "concurrent:lessDist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
 
     grunt.registerTask "default", ["server"]
+
+    grunt.registerTask "heroku:production", ["clean", "less", "mincss", "uglify"]
