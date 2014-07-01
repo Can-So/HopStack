@@ -9,8 +9,8 @@ angular.module('app.controllers', [])
         $window = $(window)
 
         $scope.main =
-            brand: 'Rainbow'
-            name: 'Lisa Doe' # those which uses i18n directive can not be replaced for now.
+            brand: 'Simflofy'
+            name: 'Bearded Robot' # those which uses i18n directive can not be replaced for now.
 
 
         $scope.pageTransitionOpts = [
@@ -31,7 +31,7 @@ angular.module('app.controllers', [])
             layout: 'wide'                                  # 'boxed', 'wide'
             menu: 'vertical'                                # 'horizontal', 'vertical'
             fixedHeader: true                               # true, false
-            fixedSidebar: false                             # true, false
+            fixedSidebar: true                             # true, false
             pageTransition: $scope.pageTransitionOpts[0]    # unlimited, check out "_animation.scss"
 
         $scope.$watch('admin', (newVal, oldVal) ->
