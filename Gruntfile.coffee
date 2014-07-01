@@ -20,7 +20,7 @@ module.exports = (grunt) ->
     yeomanConfig =
         app: "client"
         dist: "dist"
-        lib: "lib" 
+        lib: "lib/dist" 
 
     try
         yeomanConfig.app = require("./bower.json").appPath or yeomanConfig.app
@@ -102,7 +102,7 @@ module.exports = (grunt) ->
                 imagesDir: "<%= yeoman.app %>/styles/ui/images/"
                 javascriptsDir: "<%= yeoman.app %>/scripts"
                 fontsDir: "<%= yeoman.app %>/fonts"
-                importPath: "<%= yeoman.li %>/bower_components"
+                importPath: "<%= yeoman.lib %>/bower_components"
                 httpImagesPath: "styles/ui/images/"
                 httpGeneratedImagesPath: "styles/ui/images/"
                 httpFontsPath: "fonts"
