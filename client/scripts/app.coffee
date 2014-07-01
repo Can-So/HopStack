@@ -4,6 +4,7 @@ angular.module('app', [
     # Angular modules
     'ngRoute'
     'ngAnimate'
+    'ngMap'
 
     # 3rd Party Modules
     'ui.bootstrap'
@@ -11,7 +12,6 @@ angular.module('app', [
     'mgo-angular-wizard'
     'textAngular'
     'ui.tree'
-    'ngMap'
     'ngTagsInput'
     'angular-intro'
 

@@ -25,7 +25,7 @@
     "weather-icons": "~0.0.1",
     "textAngular": "1.2.1",
     "angular-ui-tree": "~2.0.3",
-    "ngmap": "~0.6.0",
+    "ngmap": "*",
     "jqvmap": "*",
     "ng-tags-input": "~2.0.1",
     "intro.js": "~0.9.0",
