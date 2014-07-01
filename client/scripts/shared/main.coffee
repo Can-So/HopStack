@@ -58,13 +58,25 @@ angular.module('app.controllers', [])
             return
         , true)
 
+
         $scope.color =
+            primary:    '#efefef'
+            success:    '#efefef'
+            info:       '#efefef'
+            infoAlt:    '#efefef'
+            warning:    '#efefef'
+            danger:     '#efefef'
+
+//edited out for demo purposes - PLEASE REMOVE when completed with style guide
+/*        $scope.color =
             primary:    '#248AAF'
             success:    '#3CBC8D'
             info:       '#29B7D3'
             infoAlt:    '#666699'
             warning:    '#FAC552'
             danger:     '#E9422E'
+*/
+
 
 ])
 
