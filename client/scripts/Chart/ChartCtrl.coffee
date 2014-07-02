@@ -158,15 +158,15 @@ angular.module('app.chart.ctrls', [])
     '$scope'
     ($scope) ->
         mainData = [
-            {month: '2013-01', xbox: 294000, will: 136000, playstation: 244000}
-            {month: '2013-02', xbox: 228000, will: 335000, playstation: 127000}
-            {month: '2013-03', xbox: 199000, will: 159000, playstation: 130000}
-            {month: '2013-04', xbox: 174000, will: 160000, playstation: 82000}
-            {month: '2013-05', xbox: 255000, will: 318000, playstation: 82000}
-            {month: '2013-06', xbox: 298400, will: 401800, playstation: 98600}
-            {month: '2013-07', xbox: 370000, will: 225000, playstation: 159000}
-            {month: '2013-08', xbox: 376700, will: 303600, playstation: 130000}
-            {month: '2013-09', xbox: 527800, will: 301000, playstation: 119400}
+            {month: '2014-01', xbox: 294000, will: 136000, playstation: 244000}
+            {month: '2014-02', xbox: 228000, will: 335000, playstation: 127000}
+            {month: '2014-03', xbox: 199000, will: 159000, playstation: 130000}
+            {month: '2014-04', xbox: 174000, will: 160000, playstation: 82000}
+            {month: '2014-05', xbox: 255000, will: 318000, playstation: 82000}
+            {month: '2014-06', xbox: 298400, will: 401800, playstation: 98600}
+            {month: '2014-07', xbox: 370000, will: 225000, playstation: 159000}
+            {month: '2014-08', xbox: 376700, will: 303600, playstation: 130000}
+            {month: '2014-09', xbox: 527800, will: 301000, playstation: 119400}
         ]
         mainColor = [$scope.color.infoAlt, $scope.color.danger, $scope.color.success]
         $scope.main = 
@@ -184,12 +184,12 @@ angular.module('app.chart.ctrls', [])
 
         # line & area
         simpleData = [
-            { year: '2008', value: 20 }
-            { year: '2009', value: 10 }
-            { year: '2010', value: 5 }
+            { year: '2009', value: 20 }
+            { year: '2010', value: 10 }
             { year: '2011', value: 5 }
-            { year: '2012', value: 20 }
-            { year: '2013', value: 19 }
+            { year: '2012', value: 5 }
+            { year: '2013', value: 20 }
+            { year: '2014', value: 19 }
         ]
         simpleColor = [$scope.color.primary]
         $scope.simple1 =
@@ -254,12 +254,12 @@ angular.module('app.chart.ctrls', [])
 
         # bar
         barData = [
-            { year: '2008', a: 20, b: 16, c: 12 }
-            { year: '2009', a: 10, b: 22, c: 30 }
-            { year: '2010', a: 5, b: 14, c: 20 }
-            { year: '2011', a: 5, b: 12, c: 19 }
-            { year: '2012', a: 20, b: 19, c: 13}
-            { year: '2013', a: 28, b: 22, c: 20 }
+            { year: '2009', a: 20, b: 16, c: 12 }
+            { year: '2010', a: 10, b: 22, c: 30 }
+            { year: '2011', a: 5, b: 14, c: 20 }
+            { year: '2012', a: 5, b: 12, c: 19 }
+            { year: '2013', a: 20, b: 19, c: 13}
+            { year: '2014', a: 28, b: 22, c: 20 }
         ]
         barColor = [$scope.color.infoAlt, $scope.color.success, $scope.color.warning]
         $scope.bar1 =
@@ -285,10 +285,10 @@ angular.module('app.chart.ctrls', [])
         # donut
         donutColor = [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
         donutData = [
-            {label: "Download Sales", value: 12}
-            {label: "In-Store Sales", value: 30}
-            {label: "Mail-Order Sales", value: 20}
-            {label: "Online Sales", value: 19}
+            {label: "Downloads", value: 12}
+            {label: "Views", value: 30}
+            {label: "Edits", value: 20}
+            {label: "Issues", value: 9}
         ]
         $scope.donut1 = 
             data: donutData
@@ -354,8 +354,8 @@ angular.module('app.chart.ctrls', [])
 
         # Area Chart
         areaChart = {}
-        areaChart.data1 = [[2007,15],[2008,20],[2009,10],[2010,5],[2011,5],[2012,20],[2013,28]]
-        areaChart.data2 = [[2007,15],[2008,16],[2009,22],[2010,14],[2011,12],[2012,19],[2013,22]]
+        areaChart.data1 = [[2007,15],[2009,20],[2010,10],[2011,5],[2012,5],[2013,20],[2014,28]]
+        areaChart.data2 = [[2007,15],[2009,16],[2010,22],[2011,14],[2012,12],[2013,19],[2014,22]]
         $scope.area = {}
         $scope.area.data = [
             data: areaChart.data1
@@ -405,9 +405,9 @@ angular.module('app.chart.ctrls', [])
 
         # Stacked bar chart
         barChart = {} 
-        barChart.data1 = [[2008,20],[2009,10],[2010,5],[2011,5],[2012,20],[2013,28]]
-        barChart.data2 = [[2008,16],[2009,22],[2010,14],[2011,12],[2012,19],[2013,22]]
-        barChart.data3 = [[2008,12],[2009,30],[2010,20],[2011,19],[2012,13],[2013,20]]
+        barChart.data1 = [[2009,20],[2010,10],[2011,5],[2012,5],[2013,20],[2014,28]]
+        barChart.data2 = [[2009,16],[2010,22],[2011,14],[2012,12],[2013,19],[2014,22]]
+        barChart.data3 = [[2009,12],[20102009,30],[20112010,20],[20122011,19],[20132012,13],[20142013,20]]
         $scope.barChart = {}
         $scope.barChart.data = [
                 label: "Value A"
@@ -520,17 +520,17 @@ angular.module('app.chart.ctrls', [])
         # Pie Chart
         $scope.pieChart = {}
         $scope.pieChart.data = [
-            label: "Download Sales"
+            label: "Downloads"
             data: 12
         ,
-            label: "In-Store Sales"
+            label: "Views"
             data: 30
         ,
-            label: "Mail-Order Sales"
+            label: "Edits"
             data: 20
         ,
-            label: "Online Sales"
-            data: 19        
+            label: "Issues"
+            data: 9        
         ]
         $scope.pieChart.options =
             series:
@@ -551,17 +551,17 @@ angular.module('app.chart.ctrls', [])
         # Donut Chart
         $scope.donutChart = {}
         $scope.donutChart.data = [
-            label: "Download Sales"
+            label: "Downloads"
             data: 12
         ,
-            label: "In-Store Sales"
+            label: "Views"
             data: 30
         ,
-            label: "Mail-Order Sales"
+            label: "Edits"
             data: 20
         ,
-            label: "Online Sales"
-            data: 19    
+            label: "Issues"
+            data: 9    
         ]
         $scope.donutChart.options =
             series:

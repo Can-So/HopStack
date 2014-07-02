@@ -8,8 +8,6 @@
         <div class="panel-body">
             <label class="switch"><input type="checkbox" checked><i></i></label>
             <div class="space"></div>
-            <label class="switch switch-success"><input type="checkbox" checked><i></i></label>
-            <div class="space"></div>
             <label class="switch switch-info"><input type="checkbox" checked><i></i></label>
             <div class="space"></div>
             <label class="switch switch-warning"><input type="checkbox" checked><i></i></label>
@@ -259,13 +257,6 @@
             <div class="space"></div>
             <input type="file" title="Choose File" data-ui-file-upload class="btn-primary">
             <div class="space"></div>
-            <input type="file" title="Choose File" data-ui-file-upload class="btn-success">
-            <div class="space"></div>
-            <input type="file" title="Choose File" data-ui-file-upload class="btn-info">
-            <div class="space"></div>
-            <input type="file" title="Choose File" data-ui-file-upload class="btn-warning">
-            <div class="space"></div>
-            <input type="file" title="Choose File" data-ui-file-upload class="btn-danger">
         </div>
     </section>
     <!-- end File upload button -->
@@ -317,7 +308,7 @@
                         <span class="ui-select"><select ng-model="mstep" ng-options="opt for opt in options.mstep"></select></span>
                     </p>
                         
-                    <button class="btn btn-info" ng-click="toggleMode()">12H / 24H</button>
+                    <button class="btn btn-primary" ng-click="toggleMode()">12H / 24H</button>
                     <div class="space"></div>
                     <button class="btn btn-default" ng-click="update()">Set to 14:00</button>
                     <div class="space"></div>
@@ -366,11 +357,11 @@
                         </span>
                     </p>
 
-                    <button class="btn btn-sm btn-info" ng-click="today()">Today</button>
+                    <button class="btn btn-sm btn-primary" ng-click="today()">Today</button>
                     <div class="space"></div>
                     <button class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
                     <div class="space"></div>
-                    <button class="btn btn-sm btn-success" ng-click="toggleWeeks()" tooltip="For inline datepicker">Toggle Weeks</button>
+                    <button class="btn btn-sm btn-primary" ng-click="toggleWeeks()" tooltip="For inline datepicker">Toggle Weeks</button>
                     <div class="space"></div>
                     <button class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
                     <div class="space"></div>
@@ -404,7 +395,7 @@
                     </div>
 
                     <button class="btn btn-danger" ng-click="rate = 0" ng-disabled="isReadonly">Clear</button>
-                    <button class="btn btn-info" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
+                    <button class="btn btn-primary" ng-click="isReadonly = ! isReadonly">Toggle Readonly</button>
                 </div>
                 <div class="col-md-6">
                     <h5>Colorful and Sizing</h5>
