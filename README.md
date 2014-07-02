@@ -3,8 +3,10 @@ bearded-robot-proto
 
 ##Bearded Robot Prototype App
 
-Setup Docs: http://bearded-robot-proto.herokuapp.com/docs/
-App URL: http://bearded-robot-proto.herokuapp.com
+Setup Docs: http://bearded-robot-mockup.herokuapp.com/#/docs/docs
+Dev App URL: http://bearded-robot-proto.herokuapp.com
+
+Deployed URL: http://bearded-robot-mockup.herokuapp.com/
 
 Help With Heroku, Bower and Grunt: 
 
