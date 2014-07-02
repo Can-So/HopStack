@@ -7,34 +7,34 @@ angular.module('app.tables', [])
     ($scope, $filter) ->
         # filter
         $scope.stores = [
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
-            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: all}
-            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: all}
-            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: secured}
-            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: limited}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}'limited'}
+            {name: 'Powerpoint: The essence of Bearded Robots', type: 'Powerpoint', views: 292, access: 'all'}
+            {name: 'Social: LinkedIn - Bearded Robot Company Page', type: 'Social', views: 1132, access: 'all'}
+            {name: 'PDF: Contracts Negotation', type: 'Legal', views: 17, access: 'secured'}
+            {name: 'Social: Facebook Page Feed', type: 'Social', views: 3327, access: 'limited'}
         ]
         $scope.searchKeywords = ''
         $scope.filteredStores = []

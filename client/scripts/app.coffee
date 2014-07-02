@@ -40,6 +40,7 @@ angular.module('app', [
 
         routes = [
             'dashboard'
+            'docs/docs'
             'ui/typography', 'ui/buttons', 'ui/icons', 'ui/grids', 'ui/widgets', 'ui/components', 'ui/timeline', 'ui/nested-lists', 'ui/pricing-tables', 'ui/maps'
             'tables/static', 'tables/dynamic', 'tables/responsive', 'tables/responsive-filters'
             'forms/elements', 'forms/layouts', 'forms/validation', 'forms/wizard'
@@ -63,5 +64,6 @@ angular.module('app', [
         $routeProvider
             .when('/', { redirectTo: '/dashboard'} )
             .when('/404', { templateUrl: 'views/pages/404.html'} )
+            .when('/charts/kibana', { redirectTo: '/pages/500'} )
             .otherwise( redirectTo: '/404' )
 ])
