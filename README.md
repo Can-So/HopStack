@@ -1,9 +1,9 @@
 # Put some Hops in your code craft.
 
-HopStack v 0.2.3 is a beautifully crafted application stack for software teams. It's great for people who build scalable applications using AngularJS, Bootstrap, Coffeescript and SASS already,
-but is easy enough for anyone who understands HTML5, jQuery and CSS already. 
+HopStack v 0.2.3 is a beautifully crafted application stack for software teams. It's great for people who already build scalable applications using AngularJS, Bootstrap, Coffeescript, and SASS
+and is easy enough for anyone who understands HTML5, jQuery, and CSS. 
 
-HopStack is also a uniquely crafted blend of fine javascript malts, streamlined workflows and beautiful hops and skips to essential interface form & function.
+HopStack is also a uniquely crafted blend of fine javascript malts, streamlined workflows, and beautiful hops and skips to essential interface form & function.
 
 HopStack is great for new projects like those found in hackerspaces, creative collectives, and startup / cowork spaces. 
 
@@ -28,8 +28,8 @@ Software designers, developers, hackathoners, and product owners can create and 
 
 
 ## Some Core Features
-We enjoy good snifter of fine craft beer (and the occasional pint). It's a hobby. To actually get time to do your hobby, you have to [GYSHIDO](http://gyshido.com). To [GYSHIDO](http://gyshido.com) with code, you need to work smarter.
-So you can work smarter and drink more crafties, StacheStack uses tools like...
+We enjoy a good snifter (and the occasional pint) of fine craft beer, it's a hobby. To actually get time to do your hobby, you have to [GYSHIDO](http://gyshido.com). To [GYSHIDO](http://gyshido.com) with code, you need to work smarter.
+So you can work smarter and drink more crafties, HopStack uses tools like...
 
 * Solid Workflow with [Yeoman](http://yeoman.io), scaffolding with Yo, dependencies (plugins) management with Bower, tasks automation with Grunt, local and native cloud deployments on popular PaaS platforms like Heroku, EngineYard, AppFog, Amazon AWS, Rackspace, and more.
 * [Grunt](http://roots.io/using-grunt-for-wordpress-theme-development/) for compiling LESS to CSS, checking for JS errors, live reloading, concatenating and minifying files, versioning assets, and generating lean Modernizr builds
@@ -72,7 +72,7 @@ Everyone is welcome to help [contribute](CONTRIBUTING.md) and improve this proje
 
 ## Support
 
-* Homepage: [http://beardandfedora.com](beardandfedora.com)
+* Homepage: [http://beardandfedora.com](http://www.beardandfedora.com)
 * Documentation: [https://github.com/BeardandFedora/HopStack/docs](https://github.com/BeardandFedora/HopStack/docs)
 * Twitter: [@BeardAndFedora](https://twitter.com/BeardAndFedora), [@thinq4yourself](https://twitter.com/thinq4yourself), [@tylergoelz](https://twitter.com/tylergoelz)
 
