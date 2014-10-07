@@ -1,0 +1,57 @@
+/*
+    Document   : client/styles/_search．scss
+    Created on : 2014-07-19 05:38 PM
+    Author     : yaboi
+	Version    : 1.0.0
+    Description: handles css that ties directly to the search interface. Mainly focuses on element padding.
+*/
+
+@mixin vertical-align($align) {
+  vertical-align: $align;
+}
+
+@mixin navbar-vertical-align($element-height) {
+  margin-top: (($element-height) / 2);
+  margin-bottom: (($element-height) / 2);
+}
+
+.search-toolbar{
+    padding: 10px 0;
+
+	p {margin: 0;}
+    .va-middle {@include navbar-vertical-align(14px)}
+    .nav-chart-icon { @include vertical-align(middle)}
+    
+    .btn-group+.btn-group {
+        margin-left: 5px;
+    }
+}
+
+.search-list {
+	.va-middle { @include vertical-align(middle)}    
+}
+
+.input-group-btn:last-child>.btn:not(:last-child) {
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.search-grid {
+    white-space: nowrap;
+	overflow: hidden;
+    position: relative;
+    
+    .btn-group {position: absolute;right: 15px;top: 15px;}
+}
+
+.search-grid, .search-list {
+    .btn-group {visibility: hidden;}
+    
+    &:hover {
+        background-color: whitesmoke;
+
+        .btn-group {
+            visibility: visible;
+        }
+    }
+}

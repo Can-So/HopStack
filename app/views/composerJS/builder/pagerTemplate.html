@@ -1,0 +1,6 @@
+<div class="form-group" data-ng-controller="PaginationCtrl">
+<label for="{{formName+index}}" class="col-sm-3 control-label" ng-class="{'fb-required':required}">{{label}}</label>
+    <div class="col-md-9">
+        <pagination boundary-links="true" total-items="totalItems" ng-model="currentPage" previous-text="&lsaquo;" next-text="&rsaquo;" first-text="&laquo;" last-text="&raquo;" id="{{formName+index}}"></pagination>
+    </div>
+</div>

@@ -1,0 +1,176 @@
+/*
+    Document   : client/styles/admin/admin-custom．scss
+    Created on : 2014-08-29 04:15 AM
+    Author     : thinq4yourself
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+root {
+  display: block;
+}
+
+.nopad {
+    padding: 0 !important;
+}
+
+.nomargin {
+    margin: 0 !important;
+}
+.nomargin-top {
+    margin-top: 0 !important;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {margin-left: 0; margin-right: 5px;}
+
+/* controls-list.scss */
+
+
+#controls-list {
+  [data-type] {
+    background-position: 50% 0%;
+  }
+  ul {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-align: center;
+  }
+  li {
+    font-family: 'ProximaNova-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    zoom: 1;
+    width: 128px;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background-repeat: no-repeat;
+    padding-top: 57px;
+    list-style: none;
+    opacity: 0.85;
+    transition: opacity 0.08s linear;
+    -moz-transition: opacity 0.08s linear;
+    -webkit-transition: opacity 0.08s linear;
+    &:hover {
+      cursor: hand;
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
+  }
+}
+
+.panel-default > .panel-heading {
+    background-image: none !important;
+}
+#control-list .ui-accordion .panel, #control-list .panel-default, #control-list .panel {
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none0 none !important;
+    border-radius: none;
+}
+
+.scroll-border {
+    border-bottom-width: 0 1px 0 0;
+    border-bottom-style: solid;
+    border-bottom-color: #dbdbdb;
+}
+#control-list .content-areas .panel-body {
+padding: 0px;
+}
+
+
+#control-list .list-group-item.active, #control-list .list-group-item.active:hover, #control-list  .list-group-item.active:focus {
+  border:none;
+}
+
+#controls-list > accordion-heading .fa {
+    float: right;
+}
+
+
+/* Layout fixes*/
+
+.app > .main-container > .nav-container.nav-fixed{
+    top: 116px !important;
+  }
+.app > .header-container.header-fixed + .main-container{ 
+    top: 126px !important;
+    padding-top: 126px;
+}
+@media (min-width: 768px) {
+    .app > .header-container.header-fixed + .main-container 
+    {
+        top: 126px !important;
+        padding-top: 126px;
+    }
+}
+.right-side, .left-side {
+    min-height:initial;
+}
+.center-me {margin: 15px 25px;}
+
+/* view builder cont */
+.new-widget {margin-left: 11px}
+.content-area {margin-top: 13px; float: left;}
+
+
+/* angular-view-builder */
+
+.fb-component {
+    padding: 10px;
+    cursor: hand;
+    input { cursor: move; }
+    label { cursor: move; }
+    select { cursor: move; }
+    textarea { cursor: move; }
+}
+.fb-form-object-editable {
+    padding: 10px;
+}
+.fb-form-object-editable.fb-draggable {
+    cursor: hand;
+    input { cursor: move; }
+    label { cursor: pointer; }
+    select { cursor: move; }
+    textarea { cursor: move; }
+}
+.fb-form-object-editable.empty {
+    cursor: default;
+    margin: 6px;
+    height: 80px;
+    border:dashed 1px #aaa;
+    background-color: #eee;
+}
+
+.fb-draggable.dragging {
+    background-color: #ffffff;
+    position: absolute;
+    z-index: 800;
+    border-radius: .7em;
+    @include box-shadow(#666 0 0 20px);
+}
+
+.fb-required:after {
+    color: #b94a48;
+    content: ' *';
+}
+
+.fb-builder {
+    min-height: 250px;
+}
+
+
+.popover {
+    .control-label {
+        text-align: left;
+    }
+    form {
+        width: 240px;
+    }
+}

@@ -1,0 +1,112 @@
+<header class="top-header clearfix">
+
+    <!-- Logo -->
+    <div class="logo"
+    data-collapse-nav>
+        <a href="#/">
+            <span class="logo-icon glyphicon glyphicon-fire"></span>
+            <span>{{main.brand}}</span>
+        </a>
+    </div>
+
+    <!-- needs to be put after logo to make it working-->
+    <div class="menu-button" toggle-off-canvas>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </div>
+
+    <div class="top-nav">
+        <ul class="nav-left list-unstyled">
+            <li>
+                <a href="#/" data-toggle-nav-collapsed-min
+                             class="toggle-min"
+                             id="step3"
+                             ><i class="fa fa-bars"></i></a>
+            </li>
+            <li class="dropdown hidden-xs">
+                <a href="javascript:;" class="dropdown-toggle" id="step1" data-toggle="dropdown"><i class="fa fa-cogs"></i></a>
+                <div class="dropdown-menu with-arrow panel panel-dark admin-options" ui-not-close-on-click>
+                    <div class="panel-heading"> UI Options </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <p>Fixed Controls</p>
+                            <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1" ng-model="admin.fixedHeader"><span>Fixed Top Header</span></label>
+                            <br>
+                            <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1" ng-model="admin.fixedSidebar"><span>Fixed Sidebar Menu</span></label>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+<!--             <li class="dropdown hidden-xs">
+                <a href="javascript:;" class="dropdown-toggle" id="step4" data-toggle="dropdown">
+                    <i class="fa fa-tint"></i>
+                </a>
+                <ul class="dropdown-menu pull-right color-switch" data-ui-color-switch>
+                    <li><a href="javascript:;" class="color-option color-some_color" data-style="some_color"></a></li>
+                </ul>
+            </li> 
+            <li class="search-box visible-md visible-lg">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-search text-muted"></i></span>
+                    <input type="text" class="form-control" placeholder="Search...">
+                </div>
+            </li>-->
+            <li class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-bell-o"></i>
+                    <span class="badge badge-info">3</span>
+                </a>
+                <div class="dropdown-menu with-arrow panel panel-dark">
+                    <div class="panel-heading">
+                        You have 3 notifications.
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="javascript:;" class="media">
+                                <span class="pull-left media-icon">
+                                    <span class="btn-icon-lined btn-icon-round btn-success"><i class="fa fa-bell-o"></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <span class="block">New workflow task needs to be reviewed</span>
+                                    <span class="text-muted block">2min ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="javascript:;" class="media">
+                                <span class="pull-left media-icon">
+                                    <span class="btn-icon-lined btn-icon-round btn-info"><i class="fa fa-bell-o"></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <span class="block">New connector added</span>
+                                    <span class="text-muted">3 hours ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="javascript:;" class="media">
+                                <span class="pull-left media-icon">
+                                    <span class="btn-icon-lined btn-icon-round btn-danger"><i class="fa fa-bell-o"></i></span>
+                                </span>
+                                <div class="media-body">
+                                    <span class="block">New documents are ready</span>
+                                    <span class="text-muted">9 hours ago</span>
+                                </div>
+                            </a>
+                        </li>                       
+                    </ul>
+                    <div class="panel-footer">
+                        <a href="#/mail/inbox">Show all notifications.</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul> 
+
+        <ul class="nav-right pull-right list-unstyled">
+
+        </ul>
+    </div>
+
+</header>

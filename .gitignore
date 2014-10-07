@@ -1,0 +1,20 @@
+# Environment dependent - anything environment related to run the app, varies for each instance
+._.DS_Store
+.DS_Store
+npm-debug.log
+.settings
+.forkignore
+.codio
+
+# Dependencies - load your own by `$ npm install` and `$ bowwer install` from within the project folder via `package.json`
+node_modules
+bower_components
+
+# App caches - do not commit cache and temporary files written by the application
+.tmp/
+.sass-cache/
+package.json.swp
+
+# Optional files & folders
+docs/
+lib/

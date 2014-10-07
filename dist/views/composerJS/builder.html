@@ -1,0 +1,138 @@
+<div class="page" style="padding-top:0px !important;"  data-ng-app="composerJS.demo" data-ng-controller="DemoController">
+
+    <section class="nopad">
+        <div class="panel-body nopad">
+        
+        <div class="col-md-5 scroll-border nopad" >
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1 class="panel-title">Active Widgets <button type="button" class="btn btn-default btn-w-sm new-widget" popover-placement="right" popover-title="Create  New Widget" popover="When clicked, redirects to [ #widgetdefinitions/ ]." popover-append-to-body="true">Create New</button></h1>
+                </div>
+            <div fb-components data-slim-scroll data-scroll-height="405px"></div>
+            </div>
+        </div>
+
+            
+        <div class="col-md-7">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h1 class="panel-title"><span class="content-area">Content Area</span>
+                    <span class="ui-select">
+                        <select>
+                            <option value="MAIN">Main</option>
+                            <option value="LEFT">Left Sidebar</option>
+                            <option value="RIGHT">Right Sidebar</option>
+                            <option value="FOOTER">Footer</option>
+                        </select>
+                    </span>
+                    </h1>
+                </div>
+                <div fb-builder="default"></div>
+                <div class="panel-footer" data-ng-controller="NotifyCtrl">
+                    <div class="checkbox" class="nomargin-top">
+                        <div class="col-md-3"><span style="margin-top: 6px; display: block;">Show Scope</span></div>
+                        <div class="col-md-5">
+                            <label class="switch switch-info"><input type="checkbox" ng-model="isShowScope"><i></i> </label> 
+                        </div>
+                       <div class="col-md-4">
+                            <button type="button" class="btn btn-w-sm new-widget" data-ng-click="notify('save-scope')">Save Content Area</button>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <pre style="margin-top:30px" ng-if="isShowScope">{{form}}></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+            
+            
+    <!-- 
+    ### This is what was not working, using angular-wizard ###
+    <wizard on-finish="finishedWizard()"> 
+    <wz-step title="Configure Options">
+        <h1>This is the first step</h1>
+        <div class="row">
+                    <div class="col-md-4">
+                        <div fb-components></div>
+                    </div>
+                    <div class="col-md-6">
+                            <div fb-builder="default"></div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" ng-model="isShowScope" ng-init="isShowScope=true" />Show scope</label>
+                            </div><pre ng-if="isShowScope">{{input}}</pre>
+                    </div>
+                </div>
+        <input type="submit" wz-next value="Preview" />
+    </wz-step>
+    <wz-step title="Preview">
+        <h1>Continuing</h1>
+        <div class="row">
+                        <div ng-model="input" fb-form="default" fb-default="defaultValue"></div> 
+                    </div>
+        <input type="submit" wz-next value="Save" />
+    </wz-step>
+    </wizard>
+    
+    ### -->
+
+            
+    <!-- 
+    ### This is was a basic wizard, although also not working, using angular-wizard ###
+            
+        <section class="panel panel-default wizard">
+        <div class="panel-body">
+            <div data-ui-wizard-form>
+                <h1>Configure Options</h1>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div fb-components></div>
+                    </div>
+                    <div class="col-md-6">
+                            <div fb-builder="default"></div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" ng-model="isShowScope" ng-init="isShowScope=true" />Show scope</label>
+                            </div><pre ng-if="isShowScope">{{input}}</pre>
+                    </div>
+                </div>
+                    
+                <h1>Preview</h1>
+                    <div class="row">
+                        <div ng-model="input" fb-form="default" fb-default="defaultValue"></div> 
+                    </div>
+            </div>
+
+        </div>
+    </section>
+        
+    ### -->
+
+            
+            
+            
+        </div>
+    </section> 
+
+<!-- preview section -->
+    <section class="panel panel-primary">
+            <div class="panel-heading">
+                <h1 class="panel-title">Preview</h1>
+            </div>
+        <div class="panel-body">
+            <form class="form-horizontal">
+                <div ng-model="input" fb-form="default" fb-default="defaultValue"></div>
+            </form>
+        </div>
+                        <div class="panel-footer">
+                   <div class="checkbox" style="margin-top:0;">
+                        <div class="col-md-2"><span style="margin-top: 6px; display: block;">Show Scope</span></div>
+                        <div class="col-md-10">
+                            <label class="switch switch"><input type="checkbox" ng-model="isShowScope"><i></i> </label>
+                        </div>
+                    </div>
+                    <pre style="padding-top:5px"  ng-if="isShowScope">{{input}}</pre>
+                </div>
+
+    </section>
+    
+</div>

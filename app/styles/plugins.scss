@@ -1,0 +1,57 @@
+/*
+    Document   : client/styles/plugins．scss
+    Created on : 2014-09-02 05:12 PM
+    Author     : thinq4yourself
+    Description:
+    Purpose of the stylesheet follows.
+    To change this template use Tools | Templates.
+*/
+
+
+// Shared variables and mixins
+@import 
+    "composerJS/var"                        // global variables
+,   "bootstrap/bootstrap/mixins"        // Bootstrap mixins
+,   "bourbon/bourbon"                   // mixins
+;
+
+@import 
+    // Plugins, overrides plugins' style
+    "plugins/bootstrap-slider"
+,   "plugins/responsive-tables"
+,   "plugins/easypiecharts"
+,   "plugins/toastr"
+,   "plugins/sparkline"
+,   "plugins/jquery-steps"
+,   "plugins/angular-ui-tree"
+,   "plugins/morris"
+,   "plugins/jqvmap"
+,   "plugins/ng-tags-input"
+,   "plugins/intro"
+
+    // Pages
+,   "global/var-pages"
+,   "pages/dashboard"
+,   "pages/pages"
+,   "pages/err"
+,   "pages/lock-screen"
+,   "pages/tasks"
+,   "pages/auth"
+,   "pages/profile"
+,   "pages/ui"
+,   "pages/invoice"
+,   "pages/demo"
+
+    // sections
+,   "sections/layouts"
+,   "sections/shared"
+,   "sections/nav"
+,   "sections/nav-off-canvas"
+,   "sections/nav-horizontal"
+,   "sections/nav-min"
+,   "sections/header"
+,   "sections/body"
+
+    // views
+,   "search/search"
+;

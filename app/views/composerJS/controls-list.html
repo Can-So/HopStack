@@ -1,0 +1,120 @@
+        
+<div class="nav-wrapper scroll-border" data-slim-scroll data-scroll-height="460px" data-ng-controller="ControlListCtrl">
+<accordion close-others="oneAtATime" class="ui-accordion" id="control-list">
+    <accordion-group heading="Pro Tips" class="content-areas"><!--is-open="status.isFirstOpen" -->
+        <accordion-heading><i class="fa caret-down"></i>Pro Tips</accordion-heading>
+            <div class="callout callout-success">
+                <h4>Building Your View</h4>
+                <ol>
+                <li>To start building your view, drag an <code>Active Widget</code> from the left to the white <code>Content Area</code> on the right. </li>
+                    <li>Then, click on the widget you dropped and configure the settings in the popup menu - then click <strong>Save</strong>. Be sure to arrange the widgets in the order in which you want them displayed.</li>
+                </ol>
+            </div>
+    </accordion-group>
+    <accordion-group heading="Content Area" class="content-areas"
+                     disable
+                     hidden>
+        <accordion-heading><i class="fa caret-down"></i>Content Areas</accordion-heading>
+        <section class="panel panel-default mail-categories">
+                <ul class="list-group" data-slim-scroll data-scroll-height="150px">
+                    <li class="list-group-item"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Header Left
+                    </a></li>
+                    <li class="list-group-item"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Header Right
+                    </a></li>
+                    <li class="list-group-item active"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Main
+                        <span class="badge badge-warning pull-right">Active</span>
+                    </a></li>
+                    <li class="list-group-item"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Footer Left
+                    </a></li>
+                    <li class="list-group-item"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Footer Center
+                    </a></li>
+                    <li class="list-group-item"><a href="javascript:;">
+                        <i class="fa fa-pencil"></i>Footer Right
+                    </a></li>
+
+                </ul>
+            </section>
+    </accordion-group>
+    <accordion-group heading="Widgets"
+                disable
+                hidden>   
+        <accordion-heading><i class="fa caret-down"></i>Widgets</accordion-heading>
+            <ul id="controls-list"
+                class="controls-list"
+                data-collapse-nav
+                data-slim-scroll 
+                data-scroll-height="350px"
+                data-highlight-active>
+                
+                
+                
+            <li data-section="hopstack" data-type="hopstack/container" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/container.png); background-repeat: no-repeat;"><a href="#">Autocomplete</a></li>
+            <li data-section="hopstack" data-type="hopstack/panel" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/panels.png); background-repeat: no-repeat;"><a href="#">Pager</a></li>
+            <li data-section="hopstack" data-type="hopstack/container" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/list_group.png); background-repeat: no-repeat;"><a href="#">Results</a></li>
+            <li data-section="hopstack" data-type="hopstack/panel" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/text_area.png); background-repeat: no-repeat;"><a href="#">Metadata Display</a></li>
+            <li data-section="hopstack" data-type="hopstack/container" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/container.png); background-repeat: no-repeat;"><a href="#">Autocomplete</a></li>
+            <li data-section="hopstack" data-type="hopstack/panel" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/panels.png); background-repeat: no-repeat;"><a href="#">Pager</a></li>
+            <li data-section="hopstack" data-type="hopstack/container" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/list_group.png); background-repeat: no-repeat;"><a href="#">Results</a></li>
+            <li data-section="hopstack" data-type="hopstack/panel" class="ui-draggable" style="background-image: url(https://s3.amazonaws.com/jetstrap-site/images/builder/components/text_area.png); background-repeat: no-repeat;"><a href="#">Metadata Display</a></li>
+            </ul>        
+    </accordion-group>
+    <accordion-group heading="Search">
+        <accordion-heading><i class="fa caret-down"></i>Search</accordion-heading>
+        <label for="view-name" class="col-sm-9">Search Provider</label>
+        <div class="">
+            <input type="text" class="form-control" id="view-name" placeholder="Default View">
+        </div>
+        <label for="config-url" class="col-sm-9">Search URL</label>
+        <div class="input-group" class="col-sm-10">
+            <span class="input-group-addon">https://</span>
+            <input type="text" class="form-control" placeholder="..." id="config-url">
+        </div>
+    </accordion-group>
+    <accordion-group heading="Service">
+        <accordion-heading><i class="fa caret-down"></i>Service</accordion-heading>
+        <label for="manager-name" class="col-sm-9">Service Provider</label>
+        <div class="">
+            <input type="text" class="form-control" id="manager-name" placeholder="TSearchManager"><br>
+        </div>
+        <label for="config-url" class="col-sm-9">Service URL</label>
+        <div class="input-group" class="col-sm-10">
+            <span class="input-group-addon">https://</span>
+            <input type="text" class="form-control" placeholder="..." id="config-url">
+        </div>
+        <label for="resultLink" class="col-sm-9">Search URL</label><br>
+        <div class="">
+            <input type="text" class="form-control" id="resultLink" placeholder="external"><br>
+        </div>
+        <label for="collection" class="col-sm-9">Collection</label>
+        <div class="">
+            <input type="text" class="form-control" id="collection" placeholder="collection1"><br>
+        </div>
+        <label for="contentTypeField" class="col-sm-9">Manager URL</label>
+        <div class="">
+            <input type="text" class="form-control" id="contentTypeField" placeholder="content_type"><br>
+        </div>
+
+    </accordion-group>
+
+    <accordion-group heading="Security">
+        <accordion-heading><i class="fa caret-down"></i>Security</accordion-heading>
+        <span class="ui-select">
+                        <select>
+                            <option value="NONE">None</option>
+                            <option value="PROVIDED">Service Provided Credentials</option>
+                            <option value="PASSTHROUGH">User Pass-Through Credentials</option>
+                        </select>
+        </span>
+    </accordion-group>
+</accordion>           
+        
+</div>
+<div class="row center-me" data-ng-controller="NotifyCtrl">
+    <button type="button" class="btn btn-default btn-w-sm" popover-placement="right" popover-title="Cancel Changes" popover="Are you sure you want to cancel?" popover-append-to-body="true">Cancel</button>
+    <button type="button" class="btn btn-primary btn-w-sm new-widget" data-ng-click="notify('save-publish')">Save & Publish</button>
+</div>

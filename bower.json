@@ -1,0 +1,65 @@
+{
+  "name": "HopStack",
+  "version": "0.2.3",
+  "main": [
+    "./dist/scripts/hopstack.js",
+    "./dist/scripts/hopstack-components.js"
+  ],
+  "description": "HopStack is a beautifully crafted application stack for software teams",
+  "homepage": "https://github.com/beardandfedora/HopStack",
+  "keywords": [
+    "AngularJS",
+    "CoffeeScript",
+    "Jade",
+    "AngularJS",
+    "Beard & Fedora",
+    "composerJS",
+    "HopStack"
+  ],
+    "dependencies": {
+    "jquery": "~2.1.1",
+    "angular": "~1.2.18",
+    "angular-resource": "~1.2.18",
+    "angular-cookies": "~1.2.18",
+    "angular-sanitize": "~1.2.18",
+    "angular-route": "~1.2.18",
+    "angular-animate": "~1.2.18",
+    "angular-touch": "~1.2.18",
+    "angular-mocks": ">=1.2.18",
+    "angular-validator": ">=0.2.3",
+    "font-awesome": "~4.1.0",
+    "toastr": "~2.0.1",
+    "seiyria-bootstrap-slider": "~1.9.0",
+    "bootstrap": "~3.1.0",
+    "angular-bootstrap": "~0.11.0",
+    "bootstrap-file-input": "*",
+    "jquery.slimscroll": "~1.3.1",
+    "jquery-steps": "~1.0.7",
+    "angular-wizard": "~0.3.0",
+    "textAngular": "1.2.1",
+    "angular-ui-tree": "~2.0.3",
+    "ng-tags-input": "~2.0.1",
+    "intro.js": "~0.9.0",
+    "angular-intro.js": "~1.0.3",
+    "jquery-spinner": "~0.1.5",
+    "angular-local-storage": "~0.0.5",
+    "Repo.js": "*",
+    "google-code-prettify": "~1.0.1"
+  },
+  "resolutions": {
+    "intro.js": "~0.9.0"
+  },
+  "devDependencies": {
+    "twbs-bootstrap-sass": "~3.1.1",
+    "holderjs": "~2.3.1",
+    "responsive-tables": "*",
+    "bourbon": "~3.2.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+
+}

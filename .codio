@@ -1,0 +1,35 @@
+{
+// Configure composerJS Run and Preview buttons here.
+// thinq4yourself sept-1-14 v0.2.2
+
+    
+// Run button configuration
+  "commands": {
+      "Git Pull": "git pull",
+      "Git Add": "git add --all",
+      "Git Commit": "git commit",
+      "Git Push Github": "git push github master",
+      "Git Push Heroku": "git push heroku master",
+      "======================================": "",
+      "Grunt Karma": "grunt karma",
+      "Grunt Test": "grunt test",
+      "Grunt Server: Client": "grunt server",
+      "Grunt Build": "grunt build",
+      "Grunt Server: Dist": "grunt server:dist",
+      "Grunt LESS": "grunt lessServer",
+      "Grunt LESS Build": "grunt lessBuild",
+      "Grunt Heroku: Dev": "grunt heroku:development",
+      "Grunt Heroku: Prod": "grunt heroku:production",
+      "Node version": "node --version"
+  },
+
+// Preview button configuration
+  "preview": {
+      "Live: client/index.html": "https://{{domain}}/client/index.html",
+      "Compiled: dist/index.html": "https://{{domain}}/dist/index.html",
+        "Main (static)": "https://{{domain}}/{{index}}",
+        "Current File (static)": "https://{{domain}}/{{filepath}}",
+        "Box URL": "http://{{domain}}:3000/",
+        "Box URL SSL": "https://{{domain}}:9500/"
+  }
+}
