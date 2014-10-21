@@ -53,4 +53,4 @@ big fans of [Codio](https://codio.com/).
     
     ```bash
     $ grunt server
-    ```bash
+    ```
