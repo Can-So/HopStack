@@ -36,8 +36,8 @@ angular.module('app', [
     'app.page.ctrls'
 
     # ComposerJS UI builder modules
-    'composerJS.control-list'        # the left side controls for the page builer (currently accordion)
-    'composerJS.demo'                # builder example for the demo
+    #'composerJS.control-list'        # the left side controls for the page builer (currently accordion)
+    #'composerJS.demo'                # builder example for the demo
 
 
 ])
@@ -48,7 +48,7 @@ angular.module('app', [
 
         routes = [
             'composerJS', 'composerJS/builder', 'composerJS/preview', 'composerJS/save', 'composerJS/builder/template', 'composerJS/builder/popupTemplate'
-            '404', '500'
+            '404', '500', 'dashboard'
             'ui/typography', 'ui/buttons', 'ui/icons', 'ui/grids', 'ui/widgets', 'ui/components', 'ui/timeline', 'ui/nested-lists', 'ui/pricing-tables', 'ui/maps'
             'docs/docs', 'docs/repo', 'docs/github'
             'tables/static', 'tables/dynamic', 'tables/responsive', 'tables/responsive-filters'
