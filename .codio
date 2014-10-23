@@ -5,7 +5,8 @@
     
 // Run button configuration
   "commands": {
-      "Git Pull": "git pull",
+      "Start Ungit": "ungit --port=9501",
+      "Git Pull Master": "git pull github master",
       "Git Add": "git add --all",
       "Git Commit": "git commit",
       "Git Push Github": "git push github master",
@@ -13,7 +14,7 @@
       "======================================": "",
       "Grunt Karma": "grunt karma",
       "Grunt Test": "grunt test",
-      "Grunt Server: Client": "grunt server",
+      "Grunt Server: App": "grunt server",
       "Grunt Build": "grunt build",
       "Grunt Server: Dist": "grunt server:dist",
       "Grunt LESS": "grunt lessServer",
@@ -25,6 +26,7 @@
 
 // Preview button configuration
   "preview": {
+      "Visit Ungit": "https://{{domain}}:9501/#/repository?path=/home/codio/workspace",
       "Live: client/index.html": "https://{{domain}}/client/index.html",
       "Compiled: dist/index.html": "https://{{domain}}/dist/index.html",
         "Main (static)": "https://{{domain}}/{{index}}",

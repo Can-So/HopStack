@@ -90,7 +90,7 @@ angular.module('app.chart.directives', [])
                     hoverable: true
                     borderWidth: 1
                     borderColor: '#eeeeee'
-                colors: ["#70b1cf"]
+                colors: ["#C6CD50"]
             )
             update()
 

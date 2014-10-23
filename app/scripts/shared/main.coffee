@@ -60,9 +60,9 @@ angular.module('app.controllers', [])
 
 
         $scope.color =
-            primary:    '#00558b'
-            success:    '#3CBC8D'
-            info:       '#29B7D3'
+            primary:    '#567500'
+            success:    '#87BA01'
+            info:       '#C6CD50'
             infoAlt:    '#666699'
             warning:    '#FAC552'
             danger:     '#E9422E'
@@ -101,6 +101,7 @@ angular.module('app.controllers', [])
 
 
 ])
+
 .controller('NavCtrl', [
     '$scope', 'taskStorage', 'filterFilter'
     ($scope, taskStorage, filterFilter) ->

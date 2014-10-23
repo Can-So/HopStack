@@ -5,14 +5,14 @@ angular.module('app.task', [])
 .factory('taskStorage', ->
     STORAGE_ID = 'tasks'
     DEMO_TASKS = '[
-        {"title": "Finish homework", "completed": true},
-        {"title": "Try Google glass", "completed": false},
-        {"title": "Make a call", "completed": true},
-        {"title": "Build a snowman :)", "completed": false},
-        {"title": "Apply for monster university!", "completed": false},
-        {"title": "Play games with friends", "completed": true},
-        {"title": "Learn Swift", "completed": false},
-        {"title": "Shopping", "completed": false}
+        {"title": "Finish pale ale", "completed": true},
+        {"title": "Try black IPA", "completed": false},
+        {"title": "Make vanilla porter", "completed": true},
+        {"title": "Build a fermenting tank", "completed": false},
+        {"title": "Apply for city brew pub license", "completed": false},
+        {"title": "Drink more saison", "completed": true},
+        {"title": "Learn how to brew wih eyes closed", "completed": false},
+        {"title": "Grow our own malts", "completed": false}
 
     ]'
 

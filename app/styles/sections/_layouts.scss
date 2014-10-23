@@ -59,7 +59,7 @@ html {
 
         > .nav-container {
             display: none;
-            z-index: 11; // should be highter than top header
+            z-index: 9; // fedora: should be highter than top header
             position: static;
             float: left;
             width: $navbar-width;
@@ -68,6 +68,7 @@ html {
             border-color: darken($sidebar_bg, 10%);
             @media (min-width:$screen-sm) {
                 display: block;
+                z-index: 9;
             }
             &:before {
                 z-index: -1; // so that it is beneath top header

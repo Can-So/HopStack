@@ -82,7 +82,7 @@ angular.module('app.chart.ctrls', [])
                 scaleLength: 0
 
 
-        # Note: the online documentation of Gauge is outdated, thanks to https://github.com/bernii/gauge.js/issues/47
+        # Note: the online documentation of Gauge is outdated, thanks to https://github.com/bernii/gauge.js/Crafties/47
         # Note2: it's not responsive
         $scope.gaugeChart1 =
             data:
@@ -121,8 +121,8 @@ angular.module('app.chart.ctrls', [])
                     strokeWidth: 0.03
                     color: '#464646'
                 limitMax: 'true'
-                colorStart: '#7ACBEE'
-                colorStop: '#7ACBEE',
+                colorStart: '#87BA01'
+                colorStop: '#87BA01',
                 strokeColor: '#F1F1F1'
                 generateGradient: true
                 percentColors: [
@@ -176,8 +176,8 @@ angular.module('app.chart.ctrls', [])
             type: 'area'
             options: 
                 xkey: "month"
-                ykeys: ["pdf", "excel", "word"]
-                labels: ["pdf", "excel", "word"]
+                ykeys: ["ale", "ipa", "porter"]
+                labels: ["ale", "ipa", "porter"]
                 lineColors: mainColor
                 lineWidth: 0
                 behaveLikeLine: true
@@ -287,10 +287,10 @@ angular.module('app.chart.ctrls', [])
         # donut
         donutColor = [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
         donutData = [
-            {label: "Downloads", value: 12}
-            {label: "Views", value: 30}
-            {label: "Edits", value: 20}
-            {label: "Issues", value: 9}
+            {label: "Hops", value: 12}
+            {label: "Malts", value: 30}
+            {label: "Snifters", value: 20}
+            {label: "Crafties", value: 9}
         ]
         $scope.donut1 = 
             data: donutData
@@ -327,7 +327,7 @@ angular.module('app.chart.ctrls', [])
         $scope.line1 = {}
         $scope.line1.data = [
             data: lineChart1.data1
-            label: 'Search Throughput Trend'
+            label: 'Craft vs Shitty Beer Trend'
         ]
         $scope.line1.options = {
             series:
@@ -524,16 +524,16 @@ angular.module('app.chart.ctrls', [])
         # Pie Chart
         $scope.pieChart = {}
         $scope.pieChart.data = [
-            label: "Downloads"
+            label: "Hops"
             data: 12
         ,
-            label: "Views"
+            label: "Malts"
             data: 30
         ,
-            label: "Edits"
+            label: "Snifters"
             data: 20
         ,
-            label: "Issues"
+            label: "Crafties"
             data: 9        
         ]
         $scope.pieChart.options =
@@ -548,23 +548,23 @@ angular.module('app.chart.ctrls', [])
             colors: [$scope.color.primary, $scope.color.success, $scope.color.info, $scope.color.warning,$scope.color.danger]
             tooltip: true
             tooltipOpts:
-                content: "%p.0%, %s" # thanks https://github.com/krzysu/flot.tooltip/issues/25
+                content: "%p.0%, %s" # thanks https://github.com/krzysu/flot.tooltip/Crafties/25
                 defaultTheme: false            
 
 
         # Donut Chart
         $scope.donutChart = {}
         $scope.donutChart.data = [
-            label: "Downloads"
+            label: "Hops"
             data: 12
         ,
-            label: "Views"
+            label: "Malts"
             data: 30
         ,
-            label: "Edits"
+            label: "Snifters"
             data: 20
         ,
-            label: "Issues"
+            label: "Crafties"
             data: 9    
         ]
         $scope.donutChart.options =
@@ -586,19 +586,19 @@ angular.module('app.chart.ctrls', [])
         # Donut Chart2
         $scope.donutChart2 = {}
         $scope.donutChart2.data = [
-            label: "Downloads"
+            label: "Hops"
             data: 12
         ,
-            label: "In-App Views"
+            label: "Malts"
             data: 30
         ,
-            label: "API Views"
+            label: "Malts"
             data: 20
         ,
-            label: "Group Edits"
+            label: "Snifters"
             data: 19
         ,
-            label: "Direct Edits"
+            label: "Snifters"
             data: 15  
         ]
         $scope.donutChart2.options =
@@ -611,7 +611,7 @@ angular.module('app.chart.ctrls', [])
             grid:
                 hoverable: true
                 clickable: true
-            colors: ["#1BB7A0", "#39B5B9", "#52A3BB","#619CC4", "#6D90C5"]
+            colors: ["#87BA01", "#567500", "#52A3BB","#294E13", "#294E13"]
             tooltip: true
             tooltipOpts:
                 content: "%p.0%, %s"

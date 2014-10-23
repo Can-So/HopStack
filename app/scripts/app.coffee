@@ -4,7 +4,6 @@ angular.module('app', [
     # Angular modules
     'ngRoute'
     'ngAnimate'
-    'ngMap'
 
     # 3rd Party Modules
     'ui.bootstrap'
@@ -12,28 +11,29 @@ angular.module('app', [
     'mgo-angular-wizard'
     'textAngular'
     'ui.tree'
+    'ngMap'
     'ngTagsInput'
     'angular-intro'
-
-     # UI modules
-    'app.ui.ctrls'
-    'app.ui.directives'
-    'app.ui.services'
-    'app.ui.map'
-    'app.ui.form.ctrls'
-    'app.ui.form.directives'
 
     # Custom modules
     'app.controllers'
     'app.directives'
     'app.localization'
     'app.nav'
+    'app.ui.ctrls'
+    'app.ui.directives'
+    'app.ui.services'
+    'app.ui.map'
     'app.form.validation'
+    'app.ui.form.ctrls'
+    'app.ui.form.directives'
     'app.tables'
     'app.task'
     'app.chart.ctrls'
     'app.chart.directives'
     'app.page.ctrls'
+    'app.chart.ctrls'
+    'app.chart.directives'
 
     # ComposerJS UI builder modules
     #'composerJS.control-list'        # the left side controls for the page builer (currently accordion)
@@ -56,6 +56,8 @@ angular.module('app', [
             'pages/blank', 'pages/forgot-password', 'pages/invoice', 'pages/lock-screen', 'pages/profile', 'pages/signin', 'pages/signup'
             'mail/compose', 'mail/inbox', 'mail/single'
             'tasks/tasks'
+            'charts/flot', 'charts/morris', 'charts/chart'
+            
         ]
 
         setRoutes = (route) ->
