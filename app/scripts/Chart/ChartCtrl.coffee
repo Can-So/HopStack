@@ -160,15 +160,15 @@ angular.module('app.chart.ctrls', [])
     
     
         mainData = [
-            {month: '2014-01', pdf: 294000, excel: 136000, word: 244000}
-            {month: '2014-02', pdf: 228000, excel: 335000, word: 127000}
-            {month: '2014-03', pdf: 199000, excel: 159000, word: 130000}
-            {month: '2014-04', pdf: 174000, excel: 160000, word: 82000}
-            {month: '2014-05', pdf: 255000, excel: 318000, word: 82000}
-            {month: '2014-06', pdf: 298400, excel: 401800, word: 98600}
-            {month: '2014-07', pdf: 370000, excel: 225000, word: 159000}
-            {month: '2014-08', pdf: 376700, excel: 303600, word: 130000}
-            {month: '2014-09', pdf: 527800, excel: 301000, word: 119400}
+            {month: '2014-01', ale: 294000, ipa: 136000, porter: 244000}
+            {month: '2014-02', ale: 228000, ipa: 335000, porter: 127000}
+            {month: '2014-03', ale: 199000, ipa: 159000, porter: 130000}
+            {month: '2014-04', ale: 174000, ipa: 160000, porter: 82000}
+            {month: '2014-05', ale: 255000, ipa: 318000, porter: 82000}
+            {month: '2014-06', ale: 298400, ipa: 401800, porter: 98600}
+            {month: '2014-07', ale: 370000, ipa: 225000, porter: 159000}
+            {month: '2014-08', ale: 376700, ipa: 303600, porter: 130000}
+            {month: '2014-09', ale: 527800, ipa: 301000, porter: 119400}
         ]
         mainColor = [$scope.color.infoAlt, $scope.color.danger, $scope.color.success]
         $scope.main = 

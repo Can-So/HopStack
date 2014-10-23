@@ -56,7 +56,7 @@ angular.module('app', [
             'pages/blank', 'pages/forgot-password', 'pages/invoice', 'pages/lock-screen', 'pages/profile', 'pages/signin', 'pages/signup'
             'mail/compose', 'mail/inbox', 'mail/single'
             'tasks/tasks'
-            'charts/flot', 'charts/morris', 'charts/chart'
+            'charts/flot', 'charts/morris', 'charts/charts'
             
         ]
 

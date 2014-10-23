@@ -9,6 +9,8 @@ $bootstrap-sass-asset-helper: (twbs-font-path("") != unquote('twbs-font-path("")
 
 //== Colors
 //
+//== Brand Colors for HopStack originate from http://www.colourlovers.com/palette/2372338/Colorado_Hops
+//
 //## Gray and brand colors for use across Bootstrap.
 
 $gray-darker:            lighten(#000, 13.5%) !default; // #222
@@ -336,7 +338,7 @@ $grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
 //
 //## Define the maximum width of `.container` for different screen sizes.
 //container basics - left margin//
-$container-left-margin:        300px !default;
+$container-left-margin:        276px !default;
 // Small screen / tablet
 $container-tablet:             ((720px + $grid-gutter-width)) !default;
 //** For `$screen-sm-min` and up.
@@ -358,7 +360,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-width:                     300px !default;
+$navbar-width:                     276px !default;
 $navbar-height:                    50px !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             $border-radius-base !default;
