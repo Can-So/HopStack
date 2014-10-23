@@ -17,4 +17,4 @@ package.json.swp
 
 # Optional files & folders
 docs/
-lib/
+#lib/ # fedora - adding this back until we replace dependency on /lib...for yaboi
