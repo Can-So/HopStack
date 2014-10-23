@@ -1,0 +1,1261 @@
+<tabset justified="true" class="ui-tab">
+   <tab heading="Live">
+       <div class="page page-charts" >
+
+
+    <section data-ng-controller="sparklineCtrl">
+    <div class="row">
+            <div class="col-lg-12">
+                <form role="form">
+                    <div class="input-group input-group-lg">
+                        <input type="text" placeholder="Search Files..." class="form-control" data-ng-model="searchKeywords" data-ng-keyup="search()">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default" ng-click="isCollapsed = !isCollapsed">
+                                <i class="glyphicon glyphicon-filter"></i>
+                                <span class="sr-only">Filter Search</span>
+                            </button>
+                            <button class="btn btn-primary" type="button" data-ng-click="search()">
+                                <i class="hidden-lg glyphicon glyphicon-search"></i>
+                                <span class="visible-lg">Search</span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row" collapse="isCollapsed">
+            <div class="col-lg-12">
+                <div class="divider divider-md"></div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Advanced Search Options</div>
+                    <div class="panel-body">
+                        <ul class="list-unstyled">
+                            <li class="col-lg-6">
+                                <h4>Size</h4>
+                                <input type="text" value="" ui-range-slider data-slider-min="0" data-slider-max="100" data-slider-step="10" data-slider-orientation="horizontal" data-slider-value="[20, 80]" data-slider-selection="before" data-slider-tooltip="show" data-slider-handle="round">
+                            </li>
+                            <li class="col-lg-6">
+                                <h4>Time</h4>
+                                <div class="btn-group" dropdown on-toggle="toggled(open)">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" ng-disabled="disabled">
+                                        Button dropdown <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a href="#">Today</a>
+                                        </li>
+                                        <li><a href="#">Past Week</a>
+                                        </li>
+                                        <li><a href="#">Past Month</a>
+                                        </li>
+                                        <li><a href="#">Past Six Months</a>
+                                        </li>
+                                        <li><a href="#">Past Year</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="col-lg-12">
+                                    <div class="divider divider-sm"></div>
+                                    <h4>Type</h4>
+                                    <label class="ui-checkbox">
+                                        <input name="Select All" type="checkbox" value="all"><span>Select All</span>
+                                    </label>
+                                    <label class="ui-checkbox">
+                                        <input name="Unselect All" type="checkbox" value="none"><span>Unselect All</span>
+                                    </label>
+                                    <label class="ui-checkbox">
+                                        <input name="Powerpoint" type="checkbox" value="Ppwerpoint"><span>Powerpoint</span>
+                                    </label>
+                                    <label class="ui-checkbox">
+                                        <input name="Social" type="checkbox" value="social"><span>Social</span>
+                                    </label>
+                                    <label class="ui-checkbox">
+                                        <input name="Legal" type="checkbox" value="legal"><span>Legal</span>
+                                    </label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <div class="row">
+            <div class="search-toolbar clearfix">
+                <div class="col-xs-6">
+                    <p class="va-middle">Viewing {{stores.length}} Documents</p>
+                </div>
+                <div class="col-xs-6">
+                    <div class="pull-right">
+                        <div class="btn-group" data-ng-controller="sparklineCtrl">
+                            <a href="#/charts/charts" class="btn btn-default">
+                                <span data-sparkline data-data="simpleChart2.data" data-options="simpleChart2.options" class="nav-chart-icon"></span>
+                                <span class="hidden-sm hidden-xs">View Reports</span>
+                            </a>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#/tables/responsive-filters" class="btn btn-default" ng-model="checkModel.list" btn-checkbox><i class="glyphicon glyphicon-th-list"></i></a>
+                            <a href="#/tables/dynamic" class="btn btn-default" ng-model="checkModel.active" btn-checkbox><i class="glyphicon glyphicon-th-large"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="panel panel-default" >
+            <div class="panel-heading"><span class="glyphicon glyphicon-th"></span> Analytics</div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Document Trends</th>
+                        <th>Document Title</th>
+                        <th>Document Type</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span data-sparkline
+                                  data-data="simpleChart1.data"
+                                  data-options="simpleChart1.options"
+                                  ></span>
+                        </td>
+                        <td>The essence of Bearded Robots</td>
+                        <td>Powerpoint</td>
+                    </tr>
+                    <tr>
+                        <td><span data-sparkline
+                                  data-data="simpleChart2.data"
+                                  data-options="simpleChart2.options"
+                                  ></span></td>
+                        <td>ATandT_CZE_Bricks-and-clicks.doc</td>
+                        <td>Word</td>
+                    </tr>
+                    <tr>
+                        <td><span data-sparkline
+                                  data-data="simpleChart1.data"
+                                  data-options="simpleChart1.options"
+                                  ></span></td>
+                        <td>Goldman_SEN_DRM.pptx</td>
+                        <td>Powerpoint</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span data-sparkline
+                                  data-data="tristateChart1.data"
+                                  data-options="tristateChart1.options"
+                                  ></span>
+                        </td>
+                        <td>Facebook Page Feed</td>
+                        <td>Social</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> 
+
+            <section data-ng-controller="chartCtrl">
+  
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Search Frequency</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <canvas data-gauge-chart
+                                data-data="gaugeChart1.data"
+                                data-options="gaugeChart1.options"
+                                style="width: 220px; height: 110px; "
+                                ></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">View Frequency</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <canvas data-gauge-chart
+                                data-data="gaugeChart2.data"
+                                data-options="gaugeChart2.options"
+                                style="width: 220px; height: 110px; "
+                                ></canvas>
+                    </div>
+                </div>            
+            </div>
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Edit Frequency</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <canvas data-gauge-chart
+                                data-data="gaugeChart3.data"
+                                data-options="gaugeChart3.options"
+                                style="width: 220px; height: 110px; "
+                                ></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Documents Created</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div data-sparkline
+                              data-data="largeChart1.data"
+                              data-options="largeChart1.options"
+                              ></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Document Edits</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div data-sparkline
+                              data-data="largeChart2.data"
+                              data-options="largeChart2.options"
+                              ></div>
+                    </div>
+                </div>            
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Most Edited Docs</h3>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div data-sparkline
+                              data-data="largeChart3.data"
+                              data-options="largeChart3.options"
+                              ></div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+
+
+    </section>
+
+</div>
+<!-- # end live tab--></tab>
+   <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script> 
+   <tab heading="Angular HTML">
+       <?prettify lang=html?>
+       <pre class="prettyprint lang-html"><code>
+  &lt;div class=&quot;page page-charts&quot; &gt;
+
+
+    &lt;section data-ng-controller=&quot;sparklineCtrl&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-lg-12&quot;&gt;
+                &lt;form role=&quot;form&quot;&gt;
+                    &lt;div class=&quot;input-group input-group-lg&quot;&gt;
+                        &lt;input type=&quot;text&quot; placeholder=&quot;Search Files...&quot; class=&quot;form-control&quot; data-ng-model=&quot;searchKeywords&quot; data-ng-keyup=&quot;search()&quot;&gt;
+                        &lt;div class=&quot;input-group-btn&quot;&gt;
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; ng-click=&quot;isCollapsed = !isCollapsed&quot;&gt;
+                                &lt;i class=&quot;glyphicon glyphicon-filter&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;sr-only&quot;&gt;Filter Search&lt;/span&gt;
+                            &lt;/button&gt;
+                            &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-ng-click=&quot;search()&quot;&gt;
+                                &lt;i class=&quot;hidden-lg glyphicon glyphicon-search&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;visible-lg&quot;&gt;Search&lt;/span&gt;
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;row&quot; collapse=&quot;isCollapsed&quot;&gt;
+            &lt;div class=&quot;col-lg-12&quot;&gt;
+                &lt;div class=&quot;divider divider-md&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;Advanced Search Options&lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;ul class=&quot;list-unstyled&quot;&gt;
+                            &lt;li class=&quot;col-lg-6&quot;&gt;
+                                &lt;h4&gt;Size&lt;/h4&gt;
+                                &lt;input type=&quot;text&quot; value=&quot;&quot; ui-range-slider data-slider-min=&quot;0&quot; data-slider-max=&quot;100&quot; data-slider-step=&quot;10&quot; data-slider-orientation=&quot;horizontal&quot; data-slider-value=&quot;[20, 80]&quot; data-slider-selection=&quot;before&quot; data-slider-tooltip=&quot;show&quot; data-slider-handle=&quot;round&quot;&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;col-lg-6&quot;&gt;
+                                &lt;h4&gt;Time&lt;/h4&gt;
+                                &lt;div class=&quot;btn-group&quot; dropdown on-toggle=&quot;toggled(open)&quot;&gt;
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot; ng-disabled=&quot;disabled&quot;&gt;
+                                        Button dropdown &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+                                    &lt;/button&gt;
+                                    &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot;&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Today&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Past Week&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Past Month&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Past Six Months&lt;/a&gt;
+                                        &lt;/li&gt;
+                                        &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Past Year&lt;/a&gt;
+                                        &lt;/li&gt;
+                                    &lt;/ul&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                            &lt;li&gt;
+                                &lt;div class=&quot;col-lg-12&quot;&gt;
+                                    &lt;div class=&quot;divider divider-sm&quot;&gt;&lt;/div&gt;
+                                    &lt;h4&gt;Type&lt;/h4&gt;
+                                    &lt;label class=&quot;ui-checkbox&quot;&gt;
+                                        &lt;input name=&quot;Select All&quot; type=&quot;checkbox&quot; value=&quot;all&quot;&gt;&lt;span&gt;Select All&lt;/span&gt;
+                                    &lt;/label&gt;
+                                    &lt;label class=&quot;ui-checkbox&quot;&gt;
+                                        &lt;input name=&quot;Unselect All&quot; type=&quot;checkbox&quot; value=&quot;none&quot;&gt;&lt;span&gt;Unselect All&lt;/span&gt;
+                                    &lt;/label&gt;
+                                    &lt;label class=&quot;ui-checkbox&quot;&gt;
+                                        &lt;input name=&quot;Powerpoint&quot; type=&quot;checkbox&quot; value=&quot;Ppwerpoint&quot;&gt;&lt;span&gt;Powerpoint&lt;/span&gt;
+                                    &lt;/label&gt;
+                                    &lt;label class=&quot;ui-checkbox&quot;&gt;
+                                        &lt;input name=&quot;Social&quot; type=&quot;checkbox&quot; value=&quot;social&quot;&gt;&lt;span&gt;Social&lt;/span&gt;
+                                    &lt;/label&gt;
+                                    &lt;label class=&quot;ui-checkbox&quot;&gt;
+                                        &lt;input name=&quot;Legal&quot; type=&quot;checkbox&quot; value=&quot;legal&quot;&gt;&lt;span&gt;Legal&lt;/span&gt;
+                                    &lt;/label&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+                &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;search-toolbar clearfix&quot;&gt;
+                &lt;div class=&quot;col-xs-6&quot;&gt;
+                    &lt;p class=&quot;va-middle&quot;&gt;Viewing {{stores.length}} Documents&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;col-xs-6&quot;&gt;
+                    &lt;div class=&quot;pull-right&quot;&gt;
+                        &lt;div class=&quot;btn-group&quot; data-ng-controller=&quot;sparklineCtrl&quot;&gt;
+                            &lt;a href=&quot;#/charts/charts&quot; class=&quot;btn btn-default&quot;&gt;
+                                &lt;span data-sparkline data-data=&quot;simpleChart2.data&quot; data-options=&quot;simpleChart2.options&quot; class=&quot;nav-chart-icon&quot;&gt;&lt;/span&gt;
+                                &lt;span class=&quot;hidden-sm hidden-xs&quot;&gt;View Reports&lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;btn-group&quot;&gt;
+                            &lt;a href=&quot;#/tables/responsive-filters&quot; class=&quot;btn btn-default&quot; ng-model=&quot;checkModel.list&quot; btn-checkbox&gt;&lt;i class=&quot;glyphicon glyphicon-th-list&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                            &lt;a href=&quot;#/tables/dynamic&quot; class=&quot;btn btn-default&quot; ng-model=&quot;checkModel.active&quot; btn-checkbox&gt;&lt;i class=&quot;glyphicon glyphicon-th-large&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;section class=&quot;panel panel-default&quot; &gt;
+            &lt;div class=&quot;panel-heading&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-th&quot;&gt;&lt;/span&gt; Analytics&lt;/div&gt;
+            &lt;table class=&quot;table table-bordered&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Document Trends&lt;/th&gt;
+                        &lt;th&gt;Document Title&lt;/th&gt;
+                        &lt;th&gt;Document Type&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;span data-sparkline
+                                  data-data=&quot;simpleChart1.data&quot;
+                                  data-options=&quot;simpleChart1.options&quot;
+                                  &gt;&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;The essence of Bearded Robots&lt;/td&gt;
+                        &lt;td&gt;Powerpoint&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;span data-sparkline
+                                  data-data=&quot;simpleChart2.data&quot;
+                                  data-options=&quot;simpleChart2.options&quot;
+                                  &gt;&lt;/span&gt;&lt;/td&gt;
+                        &lt;td&gt;ATandT_CZE_Bricks-and-clicks.doc&lt;/td&gt;
+                        &lt;td&gt;Word&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;&lt;span data-sparkline
+                                  data-data=&quot;simpleChart1.data&quot;
+                                  data-options=&quot;simpleChart1.options&quot;
+                                  &gt;&lt;/span&gt;&lt;/td&gt;
+                        &lt;td&gt;Goldman_SEN_DRM.pptx&lt;/td&gt;
+                        &lt;td&gt;Powerpoint&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;
+                            &lt;span data-sparkline
+                                  data-data=&quot;tristateChart1.data&quot;
+                                  data-options=&quot;tristateChart1.options&quot;
+                                  &gt;&lt;/span&gt;
+                        &lt;/td&gt;
+                        &lt;td&gt;Facebook Page Feed&lt;/td&gt;
+                        &lt;td&gt;Social&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/section&gt; 
+
+            &lt;section data-ng-controller=&quot;chartCtrl&quot;&gt;
+  
+
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;Search Frequency&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body text-center&quot;&gt;
+                        &lt;canvas data-gauge-chart
+                                data-data=&quot;gaugeChart1.data&quot;
+                                data-options=&quot;gaugeChart1.options&quot;
+                                style=&quot;width: 220px; height: 110px; &quot;
+                                &gt;&lt;/canvas&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;View Frequency&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body text-center&quot;&gt;
+                        &lt;canvas data-gauge-chart
+                                data-data=&quot;gaugeChart2.data&quot;
+                                data-options=&quot;gaugeChart2.options&quot;
+                                style=&quot;width: 220px; height: 110px; &quot;
+                                &gt;&lt;/canvas&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;
+
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;Edit Frequency&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body text-center&quot;&gt;
+                        &lt;canvas data-gauge-chart
+                                data-data=&quot;gaugeChart3.data&quot;
+                                data-options=&quot;gaugeChart3.options&quot;
+                                style=&quot;width: 220px; height: 110px; &quot;
+                                &gt;&lt;/canvas&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+        
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;Documents Created&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body&quot;&gt;
+                        &lt;div data-sparkline
+                              data-data=&quot;largeChart1.data&quot;
+                              data-options=&quot;largeChart1.options&quot;
+                              &gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;Document Edits&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body text-center&quot;&gt;
+                        &lt;div data-sparkline
+                              data-data=&quot;largeChart2.data&quot;
+                              data-options=&quot;largeChart2.options&quot;
+                              &gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;
+            &lt;div class=&quot;col-md-4&quot;&gt;
+                &lt;div class=&quot;panel panel-default&quot;&gt;
+                    &lt;div class=&quot;panel-heading&quot;&gt;
+                        &lt;h3 class=&quot;panel-title&quot;&gt;Most Edited Docs&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;div class=&quot;panel-body text-center&quot;&gt;
+                        &lt;div data-sparkline
+                              data-data=&quot;largeChart3.data&quot;
+                              data-options=&quot;largeChart3.options&quot;
+                              &gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;            
+            &lt;/div&gt;
+        &lt;/div&gt;
+
+
+    &lt;/section&gt;
+
+&lt;/div&gt;
+       </code></pre>
+    
+   <!-- #end angular tab--></tab>
+   <tab heading="Coffeescript">
+       <?prettify lang=javascript?>
+       <pre class="prettyprint"  lang-javascript><code>
+'use strict'
+
+angular.module('app.chart.ctrls', [])
+
+.controller('chartCtrl', [
+    '$scope'
+    ($scope) ->
+        
+        $scope.easypiechartsm1 = 
+            percent: 63
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.success
+                lineCap: 'round'
+                size: 120
+                lineWidth: 5
+        $scope.easypiechartsm2 = 
+            percent: 35
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.danger
+                lineCap: 'round'
+                size: 120
+                lineWidth: 5
+        $scope.easypiechartsm3 = 
+            percent: 75
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.primary
+                lineCap: 'round'
+                size: 120
+                lineWidth: 5
+        $scope.easypiechartsm4 = 
+            percent: 66
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.warning
+                lineCap: 'round'
+                size: 120
+                lineWidth: 5
+
+        $scope.easypiechart = 
+            percent: 65
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.primary
+                lineCap: 'round'
+                size: 180
+                lineWidth: 5
+
+        $scope.easypiechart2 = 
+            percent: 35
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.success
+                lineCap: 'round'
+                size: 180
+                lineWidth: 10
+
+        $scope.easypiechart3 = 
+            percent: 68
+            options:
+                animate:
+                    duration: 1000
+                    enabled: true
+                barColor: $scope.color.info
+                lineCap: 'square'
+                size: 180
+                lineWidth: 20
+                scaleLength: 0
+
+
+        # Note: the online documentation of Gauge is outdated, thanks to https://github.com/bernii/gauge.js/issues/47
+        # Note2: it's not responsive
+        $scope.gaugeChart1 =
+            data:
+                maxValue: 6000
+                animationSpeed: 40
+                val: 1375
+            options:
+                lines: 12
+                angle: 0
+                lineWidth: 0.47
+                pointer:
+                    length: 0.6
+                    strokeWidth: 0.03
+                    color: '#000000'
+                limitMax: 'false'
+                # colorStart: '#A3C86D'
+                # colorStop: '#A3C86D',
+                strokeColor: '#E0E0E0'
+                generateGradient: true
+                percentColors: [
+                    [0.0, $scope.color.success]
+                    [1.0, $scope.color.success]
+                ]
+
+        $scope.gaugeChart2 =
+            data:
+                maxValue: 3000
+                animationSpeed: 45
+                val: 2100
+            options:
+                lines: 12
+                angle: 0
+                lineWidth: 0.47
+                pointer:
+                    length: 0.6
+                    strokeWidth: 0.03
+                    color: '#464646'
+                limitMax: 'true'
+                colorStart: '#7ACBEE'
+                colorStop: '#7ACBEE',
+                strokeColor: '#F1F1F1'
+                generateGradient: true
+                percentColors: [
+                    [0.0, $scope.color.info]
+                    [1.0, $scope.color.info]
+                ]
+
+        $scope.gaugeChart3 =
+            data:
+                maxValue: 3000
+                animationSpeed: 50
+                val: 457
+            options:
+                lines: 12
+                angle: 0
+                lineWidth: 0.47
+                pointer:
+                    length: 0.6
+                    strokeWidth: 0.03
+                    color: '#464646'
+                limitMax: 'true'
+                colorStart: '#FF7857'
+                colorStop: '#FF7857',
+                strokeColor: '#F1F1F1'
+                generateGradient: true
+                percentColors: [
+                    [0.0, $scope.color.danger]
+                    [1.0, $scope.color.danger]
+                ] 
+
+])
+.controller('morrisChartCtrl', [
+    '$scope'
+    ($scope) ->
+    
+    
+        mainData = [
+            {month: '2014-01', pdf: 294000, excel: 136000, word: 244000}
+            {month: '2014-02', pdf: 228000, excel: 335000, word: 127000}
+            {month: '2014-03', pdf: 199000, excel: 159000, word: 130000}
+            {month: '2014-04', pdf: 174000, excel: 160000, word: 82000}
+            {month: '2014-05', pdf: 255000, excel: 318000, word: 82000}
+            {month: '2014-06', pdf: 298400, excel: 401800, word: 98600}
+            {month: '2014-07', pdf: 370000, excel: 225000, word: 159000}
+            {month: '2014-08', pdf: 376700, excel: 303600, word: 130000}
+            {month: '2014-09', pdf: 527800, excel: 301000, word: 119400}
+        ]
+        mainColor = [$scope.color.infoAlt, $scope.color.danger, $scope.color.success]
+        $scope.main = 
+            data: mainData
+            type: 'area'
+            options: 
+                xkey: "month"
+                ykeys: ["pdf", "excel", "word"]
+                labels: ["pdf", "excel", "word"]
+                lineColors: mainColor
+                lineWidth: 0
+                behaveLikeLine: true
+                pointSize: 0
+                # resize: true      # Have to disable it, since it cause firefox (29.0.1 tested) to freeze, really scary
+
+        # line & area
+        simpleData = [
+            { year: '2009', value: 20 }
+            { year: '2010', value: 10 }
+            { year: '2011', value: 5 }
+            { year: '2012', value: 5 }
+            { year: '2013', value: 20 }
+            { year: '2014', value: 19 }
+        ]
+        simpleColor = [$scope.color.primary]
+        $scope.simple1 =
+            data: simpleData
+            type: "line"
+            options: 
+                xkey: "year"
+                ykeys: ["value"]
+                labels: ["Value"]
+                lineWidth: "2"
+                lineColors: simpleColor
+                # resize: true
+        $scope.simple2 =
+            data: simpleData
+            type: "area"
+            options:
+                xkey: "year"
+                ykeys: ["value"]
+                labels: ["Value"]
+                lineWidth: "2"
+                lineColors: simpleColor
+                # resize: true
+
+
+        # combo
+        comboData = [
+            { month: '1', a: 20, b: 30 }
+            { month: '2', a: 30, b: 20 }
+            { month: '3', a: 20, b: 10 }
+            { month: '4', a: 10, b: 20 }
+            { month: '5', a: 20, b: 30 }
+            { month: '6', a: 30, b: 20 }
+            { month: '7', a: 20, b: 10 }
+            { month: '8', a: 10, b: 20 }
+            { month: '9', a: 20, b: 30 }
+            { month: '10', a: 30, b: 20 }
+            { month: '11', a: 20, b: 10 }
+            { month: '12', a: 10, b: 20 }
+        ]
+        comboColor = [$scope.color.success, $scope.color.danger, $scope.color.infoAlt]
+        $scope.combo1 = 
+            data: comboData
+            type: "line"
+            options:
+                xkey: "month"
+                ykeys: ["a", "b"]
+                labels: ["Value A", "Value B"]
+                lineWidth: "2"
+                lineColors: comboColor
+                # resize: true
+        $scope.combo2 = 
+            data: comboData
+            type: "area"
+            options:
+                xkey: "month"
+                ykeys: ["a", "b"]
+                labels: ["Value A", "Value B"]
+                lineWidth: "2"
+                lineColors: comboColor
+                # resize: true
+
+
+        # bar
+        barData = [
+            { year: '2009', a: 20, b: 16, c: 12 }
+            { year: '2010', a: 10, b: 22, c: 30 }
+            { year: '2011', a: 5, b: 14, c: 20 }
+            { year: '2012', a: 5, b: 12, c: 19 }
+            { year: '2013', a: 20, b: 19, c: 13}
+            { year: '2014', a: 28, b: 22, c: 20 }
+        ]
+        barColor = [$scope.color.infoAlt, $scope.color.success, $scope.color.warning]
+        $scope.bar1 =
+            data: barData
+            type: "bar"
+            options:
+                xkey: "year"
+                ykeys: ["a", "b", "c"]
+                labels: ["Value A", "Value B", "Value C"]
+                barColors: barColor
+                # resize: true
+        $scope.bar2 =
+            data: barData
+            type: "bar"
+            options: 
+                xkey: "year"
+                ykeys: ["a", "b", "c"]
+                labels: ["Value A", "Value B", "Value C"]
+                barColors: barColor
+                stacked: true
+                # resize: true
+
+        # donut
+        donutColor = [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
+        donutData = [
+            {label: "Downloads", value: 12}
+            {label: "Views", value: 30}
+            {label: "Edits", value: 20}
+            {label: "Issues", value: 9}
+        ]
+        $scope.donut1 = 
+            data: donutData
+            type: 'donut'
+            options:
+                xkey: "year"
+                # resize: true
+        $scope.donut2 = 
+            data: donutData
+            type: 'donut'
+            options:
+                xkey: "year"
+                colors: donutColor
+                # resize: true
+        $scope.donut3 = 
+            data: donutData
+            type: 'donut'
+            options:
+                xkey: "year"
+                formatter: "return '$' + y;"
+                # resize: true
+
+
+])
+.controller('flotChartCtrl', [
+    '$scope'
+    ($scope) ->
+
+        
+        
+        # Line Chart
+        lineChart1 = {}
+        lineChart1.data1 = [[1,15],[2,20],[3,14],[4,10],[5,10],[6,20],[7,28],[8,26],[9,22]]
+        $scope.line1 = {}
+        $scope.line1.data = [
+            data: lineChart1.data1
+            label: 'Search Throughput Trend'
+        ]
+        $scope.line1.options = {
+            series:
+                lines:
+                    show: true
+                    fill: true
+                    fillColor: { colors: [ { opacity: 0 }, { opacity: 0.3 } ] }
+                points:
+                    show: true
+                    lineWidth: 2
+                    fill: true
+                    fillColor: "#ffffff"
+                    symbol: "circle"
+                    radius: 5
+            colors: [$scope.color.primary, $scope.color.infoAlt]
+            tooltip: true
+            tooltipOpts:
+                defaultTheme: false
+            grid:
+                hoverable: true
+                clickable: true
+                tickColor: "#f9f9f9"
+                borderWidth: 1
+                borderColor: "#eeeeee"
+            xaxis:
+                 ticks: [[1,'Jan.'],[2,'Feb.'],[3,'Mar.'],[4,'Apr.'],[5,'May'],[6,'June'],[7,'July'],[8,'Aug.'],[9,'Sept.'],[10,'Oct.'],[11,'Nov.'],[12,'Dec.'],]
+        }
+
+        # Area Chart
+        areaChart = {}
+        areaChart.data1 = [[2007,15],[2009,20],[2010,10],[2011,5],[2012,5],[2013,20],[2014,28]]
+        areaChart.data2 = [[2007,15],[2009,16],[2010,22],[2011,14],[2012,12],[2013,19],[2014,22]]
+        $scope.area = {}
+        $scope.area.data = [
+            data: areaChart.data1
+            label: "Value A"
+            lines:
+                fill: true
+        ,
+            data: areaChart.data2
+            label: "Value B"
+            points:
+                show: true
+            yaxis: 2
+        ]
+        $scope.area.options = {
+            series:
+                lines:
+                    show: true
+                    fill: false
+                points:
+                    show: true
+                    lineWidth: 2
+                    fill: true
+                    fillColor: "#ffffff"
+                    symbol: "circle"
+                    radius: 5
+                shadowSize: 0
+            grid:
+                hoverable: true
+                clickable: true
+                tickColor: "#f9f9f9"
+                borderWidth: 1
+                borderColor: "#eeeeee"
+            colors: [$scope.color.success, $scope.color.danger]
+            tooltip: true
+            tooltipOpts:
+                defaultTheme: false
+            xaxis:
+                mode: "time"
+            yaxes: [{
+                # First y axis
+            }, {
+                # Second y axis
+                position: "right"
+            }]
+        }
+
+
+        # Stacked bar chart
+        barChart = {} 
+        barChart.data1 = [[2009,20],[2010,10],[2011,5],[2012,5],[2013,20],[2014,28]]
+        barChart.data2 = [[2009,16],[2010,22],[2011,14],[2012,12],[2013,19],[2014,22]]
+        barChart.data3 = [[2009,12],[20102009,30],[20112010,20],[20122011,19],[20132012,13],[20142013,20]]
+        $scope.barChart = {}
+        $scope.barChart.data = [
+                label: "Value A"
+                data: barChart.data1
+            ,
+                label: "Value B"
+                data: barChart.data2
+            ,
+                label: "Value C"
+                data: barChart.data3
+        ]
+        $scope.barChart.options =
+            series:
+                stack: true
+                bars:
+                    show: true
+                    fill: 1
+                    barWidth: 0.3
+                    align: "center"
+                    horizontal: false
+                    order: 1
+            grid:
+                hoverable: true
+                borderWidth: 1
+                borderColor: "#eeeeee"
+            tooltip: true
+            tooltipOpts:
+                defaultTheme: false  
+            colors: [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
+
+
+        # Note: flot.orderBar.js is needed in order to seperate bars side by side like Morris.js, example here: http://jsfiddle.net/pmking/WbuAF/
+        $scope.barChart1 = {}
+        $scope.barChart1.data = [
+                label: "Value A"
+                data: barChart.data1
+                bars:
+                    order: 0
+            ,
+                label: "Value B"
+                data: barChart.data2
+                bars:
+                    order: 1
+            ,
+                label: "Value C"
+                data: barChart.data3
+                bars:
+                    order: 2
+        ]
+        $scope.barChart1.options =
+            series:
+                stack: true
+                bars:
+                    show: true
+                    fill: 1
+                    barWidth: 0.2
+                    align: "center"
+                    horizontal: false
+            grid:
+                hoverable: true
+                borderWidth: 1
+                borderColor: "#eeeeee"
+            tooltip: true
+            tooltipOpts:
+                defaultTheme: false  
+            colors: [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
+
+
+        barChartH = {} 
+        barChartH.data1 = [[85, 10], [50, 20], [55,30]]
+        barChartH.data2 = [[77, 10], [60, 20], [70,30]]
+        barChartH.data3 = [[100, 10], [70, 20], [55,30]]
+        $scope.barChart2 = {}
+        $scope.barChart2.data = [
+                label: "Value A"
+                data: barChartH.data1
+                bars:
+                    order: 1
+            ,
+                label: "Value B"
+                data: barChartH.data2
+                bars:
+                    order: 2
+            ,
+                label: "Value C"
+                data: barChartH.data3
+                bars:
+                    order: 3
+        ]
+        $scope.barChart2.options =
+            series:
+                stack: true
+                bars:
+                    show: true
+                    fill: 1
+                    barWidth: 1
+                    align: "center"
+                    horizontal: true
+            grid:
+                hoverable: true
+                borderWidth: 1
+                borderColor: "#eeeeee"
+            tooltip: true
+            tooltipOpts:
+                defaultTheme: false  
+            colors: [$scope.color.success, $scope.color.info, $scope.color.warning, $scope.color.danger]
+
+
+
+        # Pie Chart
+        $scope.pieChart = {}
+        $scope.pieChart.data = [
+            label: "Downloads"
+            data: 12
+        ,
+            label: "Views"
+            data: 30
+        ,
+            label: "Edits"
+            data: 20
+        ,
+            label: "Issues"
+            data: 9        
+        ]
+        $scope.pieChart.options =
+            series:
+                pie:
+                    show: true
+            legend:
+                show: true
+            grid:
+                hoverable: true
+                clickable: true
+            colors: [$scope.color.primary, $scope.color.success, $scope.color.info, $scope.color.warning,$scope.color.danger]
+            tooltip: true
+            tooltipOpts:
+                content: "%p.0%, %s" # thanks https://github.com/krzysu/flot.tooltip/issues/25
+                defaultTheme: false            
+
+
+        # Donut Chart
+        $scope.donutChart = {}
+        $scope.donutChart.data = [
+            label: "Downloads"
+            data: 12
+        ,
+            label: "Views"
+            data: 30
+        ,
+            label: "Edits"
+            data: 20
+        ,
+            label: "Issues"
+            data: 9    
+        ]
+        $scope.donutChart.options =
+            series:
+                pie:
+                    show: true
+                    innerRadius: 0.5
+            legend:
+                show: true
+            grid:
+                hoverable: true
+                clickable: true
+            colors: [$scope.color.primary, $scope.color.success, $scope.color.info, $scope.color.warning,$scope.color.danger]
+            tooltip: true
+            tooltipOpts:
+                content: "%p.0%, %s"
+                defaultTheme: false
+
+        # Donut Chart2
+        $scope.donutChart2 = {}
+        $scope.donutChart2.data = [
+            label: "Downloads"
+            data: 12
+        ,
+            label: "In-App Views"
+            data: 30
+        ,
+            label: "API Views"
+            data: 20
+        ,
+            label: "Group Edits"
+            data: 19
+        ,
+            label: "Direct Edits"
+            data: 15  
+        ]
+        $scope.donutChart2.options =
+            series:
+                pie:
+                    show: true
+                    innerRadius: 0.45
+            legend:
+                show: false
+            grid:
+                hoverable: true
+                clickable: true
+            colors: ["#1BB7A0", "#39B5B9", "#52A3BB","#619CC4", "#6D90C5"]
+            tooltip: true
+            tooltipOpts:
+                content: "%p.0%, %s"
+                defaultTheme: false
+
+
+])
+.controller('sparklineCtrl', [
+    '$scope'
+    ($scope) ->
+
+        # advanced filters
+        $scope.isCollapsed = true
+
+    	# for widget
+        $scope.demoData1 = 
+            data: [3,1,2,2,4,6,4,5,2,4,5,3,4,6,4,7]
+            options:
+                type: 'line'
+                lineColor: '#fff'
+                highlightLineColor: '#fff'
+                fillColor: $scope.color.success
+                spotColor: false
+                minSpotColor: false
+                maxSpotColor: false
+                width: '100%';
+                height: '150px';
+
+        # sparkline page
+        $scope.simpleChart1 =
+            data: [3,1,2,3,5,3,4,2]
+            options:
+                type: 'line'
+                lineColor: $scope.color.primary
+                fillColor: '#fafafa'
+                spotColor: false
+                minSpotColor: false
+                maxSpotColor: false
+
+        $scope.simpleChart2 =
+            data: [15,13,17,14,16]
+            options:
+                type: 'bar'
+                barColor: $scope.color.primary
+
+        $scope.simpleChart3 =
+            data: [3,1,2,3,5,3,4,2]
+            options:
+                type: 'pie'
+                sliceColors: [$scope.color.primary, $scope.color.success, $scope.color.info, $scope.color.infoAlt, $scope.color.warning, $scope.color.danger]
+
+        $scope.tristateChart1 =
+            data: [1,2,-3,-5,3, 1, -4,2]
+            options:
+                type: 'tristate'
+                posBarColor: $scope.color.success
+                negBarColor: $scope.color.danger
+
+
+        $scope.largeChart1 =
+            data: [3,1,2,3,5,3,4,2]
+            options:
+                type: 'line'
+                lineColor: $scope.color.info
+                highlightLineColor: '#fff'
+                fillColor: $scope.color.info
+                spotColor: false
+                minSpotColor: false
+                maxSpotColor: false
+                width: '100%';
+                height: '150px';
+
+        $scope.largeChart2 =
+            data: [3,1,2,3,5,3,4,2]
+            options:
+                type: 'bar'
+                barColor: $scope.color.success
+                barWidth: 10
+                width: '100%';
+                height: '150px';
+
+        $scope.largeChart3 =
+            data: [3,1,2,3,5]
+            options:
+                type: 'pie'
+                sliceColors: [$scope.color.primary, $scope.color.success, $scope.color.info, $scope.color.infoAlt, $scope.color.warning, $scope.color.danger]
+                width: '150px';
+                height: '150px';
+])
+       </code></pre>
+   </tab>
+   <tab heading="SASS">
+       <pre class="prettyprint lang-css"><code>
+$pie_width_sm: 120px;
+$pie_width: 180px;
+
+.easypiechart {
+    display: inline-block;
+    position: relative;
+    width: $pie_width;
+    height: $pie_width;
+    text-align: center;
+    margin: 5px auto; 
+
+     canvas {
+        position: absolute;
+        top: 0;
+        left: 0; 
+    }
+
+    .pie-percent {
+        display: inline-block;
+        line-height: $pie_width;
+        font-size: 40px;
+        font-weight: 300;
+        color: #333; 
+        &:after {
+            content: '%';
+            margin-left: 0.1em;
+            font-size: .6em;
+        }
+    }
+
+    &.easypiechart-sm {
+        width: $pie_width_sm;
+        height: $pie_width_sm;
+        .pie-percent {
+            font-size: 28px;
+            line-height: $pie_width_sm;
+        }
+    }
+}
+
+
+       </code></pre></tab>
+</tabset>

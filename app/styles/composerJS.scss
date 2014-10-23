@@ -10,46 +10,6 @@
 /* @@ Admin App Imports - unrelgulated @@ */
 
 
-// Shared variables and mixins
-@import 
-    "composerJS/var"                  // global composerJS variables
-,   "composerJS/var-pages"            // global composerJS page variables
-,   "bootstrap/bootstrap/mixins"      // Bootstrap mixins
-,   "bourbon/bourbon"                 // mixins
-;
-
-
-// Plugins, overrides plugins' style
-@import 
-    "plugins/bootstrap-slider"
-,   "plugins/responsive-tables"
-,   "plugins/toastr"
-,   "plugins/jquery-steps"
-,   "plugins/angular-ui-tree"
-,   "plugins/ng-tags-input"
-,   "plugins/intro"
-
-    // Pages
-,   "global/var-pages"
-,   "pages/pages"
-,   "pages/err"
-,   "pages/ui"
-,   "pages/demo"
-
-    // sections
-,   "sections/layouts"
-,   "sections/shared"
-,   "sections/nav"
-,   "sections/nav-off-canvas"
-,   "sections/nav-horizontal"
-,   "sections/nav-min"
-,   "sections/header"
-,   "sections/body"
-
-    // views
-,   "search/search"
-;
-
     
 //ComposerJS Styles
 @import 

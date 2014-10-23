@@ -1,5 +1,5 @@
 /*
-    Document   : client/styles/admin/admin-custom．scss
+    Document   : client/styles/composerJS/builder．scss
     Created on : 2014-08-29 04:15 AM
     Author     : thinq4yourself
     Description:
@@ -153,7 +153,7 @@ padding: 0px;
     position: absolute;
     z-index: 800;
     border-radius: .7em;
-    @include box-shadow(#666 0 0 20px);
+    /* @include box-shadow(#666 0 0 20px); fedora: needs mixins, which are disabled for now */
 }
 
 .fb-required:after {

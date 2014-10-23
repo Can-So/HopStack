@@ -1,6 +1,6 @@
 # Put some Hops in your code craft.
 
-HopStack v 0.2.3 is a beautifully crafted application stack for software teams. It's great for people who already build scalable applications using AngularJS, Bootstrap, Coffeescript, and SASS
+HopStack is a beautifully crafted application stack for software teams. It's great for people who already build scalable applications using AngularJS, Bootstrap, Coffeescript, and SASS
 and is easy enough for anyone who understands HTML5, jQuery, and CSS. 
 
 HopStack is also a uniquely crafted blend of fine javascript malts, streamlined workflows, and beautiful hops and skips to essential interface form & function.
