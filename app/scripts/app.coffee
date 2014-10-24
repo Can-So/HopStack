@@ -47,7 +47,6 @@ angular.module('app', [
     ($routeProvider) ->
 
         routes = [
-            'composerJS', 'composerJS/builder', 'composerJS/preview', 'composerJS/save', 'composerJS/builder/template', 'composerJS/builder/popupTemplate'
             '404', '500', 'dashboard'
             'ui/typography', 'ui/buttons', 'ui/icons', 'ui/grids', 'ui/widgets', 'ui/components', 'ui/timeline', 'ui/nested-lists', 'ui/pricing-tables', 'ui/maps'
             'docs/docs', 'docs/repo', 'docs/github'
@@ -57,7 +56,8 @@ angular.module('app', [
             'mail/compose', 'mail/inbox', 'mail/single'
             'tasks/tasks'
             'charts/flot', 'charts/morris', 'charts/charts'
-            
+            'editor/kitchensink'
+            'composerJS', 'composerJS/builder', 'composerJS/preview', 'composerJS/save', 'composerJS/builder/template', 'composerJS/builder/popupTemplate'
         ]
 
         setRoutes = (route) ->
@@ -72,7 +72,7 @@ angular.module('app', [
             setRoutes(route)
         )
         $routeProvider
-            .when('/', { redirectTo: '/dashboard'} )
+            .when('/', { redirectTo: '/docs/docs'} )
             .when('/composer.html', { redirectTo: '/composerJS/builder'} )
             .when('/404', { templateUrl: 'views/404.html'} )
             .otherwise( redirectTo: '/404' )

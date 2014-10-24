@@ -64,7 +64,7 @@ So you can work smarter and drink more crafties, HopStack uses tools like...
 Everyone is welcome to help [contribute](CONTRIBUTING.md) and improve this project. There are several ways you can contribute:
 
 * Did you read the [contribution guidelines](CONTRIBUTING.md) yet?
-* Always branch and tag -- all StacheStack's `master` are beling to us (again, refer to [contribution guidelines](CONTRIBUTING.md))
+* Always branch and tag -- all StacheStack's `master` are belong to us (again, refer to [contribution guidelines](CONTRIBUTING.md))
 * Reporting issues (please read [issue guidelines](https://github.com/necolas/issue-guidelines))
 * Suggesting new features
 * Writing or refactoring code 
