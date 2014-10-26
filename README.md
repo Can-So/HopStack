@@ -1,3 +1,5 @@
+[ ![Codeship Status for BeardandFedora/HopStack](https://www.codeship.io/projects/be3d8980-3ee7-0132-ecdb-46133a0a5eef/status)](https://www.codeship.io/projects/43560)
+
 # Put some Hops in your code craft.
 
 HopStack is a beautifully crafted application stack for software teams. It's great for people who already build scalable applications using AngularJS, Bootstrap, Coffeescript, and SASS
