@@ -1,6 +1,6 @@
 {
   "name": "HopStack",
-  "version": "0.2.3",
+  "version": "1.0.3",
   "main": [
     "./dist/scripts/hopstack.js",
     "./dist/scripts/hopstack-components.js"
@@ -13,8 +13,9 @@
     "Jade",
     "AngularJS",
     "Beard & Fedora",
-    "composerJS",
-    "HopStack"
+    "Firebase",
+    "HopStack",
+    "Express"
   ],
   "dependencies": {
     "jquery": "~2.1.1",

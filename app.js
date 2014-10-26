@@ -15,5 +15,5 @@ app.configure(function() {
 });
 
 http.createServer(app).listen(app.get('port'), function() {
-    console.log("Express server listening on port " + app.get('port'));
+    console.log("HopStack server ala Express, listening on port " + app.get('port'));
 });
