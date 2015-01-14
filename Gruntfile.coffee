@@ -207,7 +207,7 @@ module.exports = (grunt) ->
         
         # 'css': ['concat']
         usemin:
-            html: ["<%= yeoman.dist %>/**/*.html", "!<%= yeoman.dist %>/components/**"]
+            html: ["<%= yeoman.dist %>/**/*.html", "!<%= yeoman.dist %>/bower_components/**"]
             css: ["<%= yeoman.dist %>/styles/**/*.css"]
             options:
                 dirs: ["<%= yeoman.dist %>"]
@@ -244,10 +244,10 @@ module.exports = (grunt) ->
                     src: [
                         "favicon.ico"
                         # bower components that has image, font dependencies
-                        "components/font-awesome/css/*"
-                        "components/font-awesome/fonts/*"
-                        "components/weather-icons/css/*"
-                        "components/weather-icons/font/*"
+                        "bower_components/font-awesome/css/*"
+                        "bower_components/font-awesome/fonts/*"
+                        "bower_components/weather-icons/css/*"
+                        "bower_components/weather-icons/font/*"
                         "fonts/**/*"
                         "i18n/**/*"
                         "images/**/*"
@@ -283,6 +283,7 @@ module.exports = (grunt) ->
 
         cssmin:
             options:
+                noRebase: true,
                 keepSpecialComments: '0'
             dist: {}    # usemin takes care of that
 
