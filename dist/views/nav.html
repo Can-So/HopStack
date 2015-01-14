@@ -1,8 +1,11 @@
-        
+<!-- *** removing NavCtrl controller from <ul id="nav" until this issue is fixed
+     *** https://github.com/BeardandFedora/HopStack/issues/3
+    
+    data-ng-controller="NavCtrl"
+-->
 <div class="nav-wrapper">
     <ul id="nav"
         class="nav"
-        data-ng-controller="NavCtrl"
         data-slim-scroll
         data-collapse-nav
         data-highlight-active>
@@ -67,6 +70,9 @@
                 <li><a href="#/charts/charts"><i class="fa fa-angle-right"></i>Other <span data-i18n="Charts"></span></a></li>
             </ul>
         </li>
+        
+        <!-- *** removing Tasks until this issue is fixed
+             *** https://github.com/BeardandFedora/HopStack/issues/3
         <li class="nav-task">
             <a href="#/tasks/tasks">
                 <i class="fa fa-tasks"></i><span data-i18n="Tasks"></span>
@@ -74,6 +80,7 @@
                       data-ng-show="taskRemainingCount > 0">{{taskRemainingCount}}</span>
             </a>
         </li>
+        -->
         <li>
             <a href="#/mail"><i class="fa fa-envelope-o"></i><span data-i18n="Mail"></span></a>
             <ul>
