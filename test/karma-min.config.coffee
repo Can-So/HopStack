@@ -2,7 +2,7 @@
 # Created with HopStack.
 # User: thinq4yourself
 # Date: 2014-09-08
-# Time: 12:49 AM
+# Time: 12:52 AM
 # To change this template use Tools | Templates.
 ##
 
@@ -10,6 +10,7 @@
 # http://karma-runner.github.io/0.12/config/configuration-file.html
 # Generated on 2014-09-07 using
 # generator-karma 0.8.3
+
 
 module.exports = (config) ->
     config.set
@@ -25,9 +26,9 @@ module.exports = (config) ->
             'test/lib/angular-mocks/angular-mocks.js'
             'test/lib/angular-validator/dist/angular-validator.js'
             'test/lib/angular-validator/dist/angular-validator-rules.js'
-            'dist/scripts/composerJS.min.js'
-            'dist/scripts/composerJS-components.min.js'
-            'test/specs/*.coffee'
+            'dist/scripts/ui.js'
+            'dist/scripts/app.js'
+            #'test/specs/*.coffee'
         ]
 
         preprocessors:
@@ -43,7 +44,7 @@ module.exports = (config) ->
 
         # web server port
         # CLI --port 9876
-        port: 8082
+        port: 8081
 
         # enable / disable colors in the output (reporters and logs)
         # CLI --colors --no-colors

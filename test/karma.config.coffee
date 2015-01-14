@@ -26,9 +26,9 @@ module.exports = (config) ->
             'test/lib/angular-mocks/angular-mocks.js'
             'test/lib/angular-validator/dist/angular-validator.js'
             'test/lib/angular-validator/dist/angular-validator-rules.js'
-            'dist/scripts/composerJS.js'
-            'dist/scripts/composerJS-components.js'
-            'test/specs/*.coffee'
+            'dist/scripts/ui.js'
+            'dist/scripts/app.js'
+            #'test/specs/*.coffee'
         ]
 
         preprocessors:
