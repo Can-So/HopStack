@@ -72,7 +72,7 @@ angular.module('app', [
             setRoutes(route)
         )
         $routeProvider
-            .when('/', { redirectTo: '/docs/docs'} )
+            .when('/', { redirectTo: '/dashboard'} )
             .when('/composer.html', { redirectTo: '/composerJS/builder'} )
             .when('/404', { templateUrl: 'views/404.html'} )
             .otherwise( redirectTo: '/404' )
