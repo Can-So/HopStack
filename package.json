@@ -1,8 +1,8 @@
 {
   "name": "HopStack",
-  "version": "1.0.3",
+  "version": "1.2.6",
   "description": "A beautifully crafted application stack for software teams",
-  "homepage": "https://github.com/beardandfedora/hopstack",
+  "homepage": "https://github.com/BeardandFedora/HopStack",
   "dependencies": {
     "express": "~3.4.7",
     "grunt": "*",
@@ -42,22 +42,22 @@
     "karma-safari-launcher": "~0.1.1"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "build": "grunt build"
   },
   "engines": {
     "node": "0.10.29"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:beardandfedorara/hopstack.git"
+    "url": "git@github.com:beardandfedora/hopstack.git"
   },
   "keywords": [
     "AngularJS",
     "CoffeeScript",
     "Jade",
     "AngularJS",
-    "Simflofy",
-    "composerJS"
+    "HopStack"
   ],
   "author": {
     "name": "Joel Serino",
@@ -66,10 +66,10 @@
   "contributors": [
     {
       "name": "Others",
-      "url": "https://github.com/beardandfedora/hopstack/graphs/contributors"
+      "url": "https://github.com/BeardandFedora/HopStack/graphs/contributors"
     }
   ],
-  "bugs": {
-    "url": "https://github.com/beardandfedora/hopstack/issues"
+   "bugs": {
+    "url": "https://github.com/BeardandFedora/HopStack/issues"
   }
 }
