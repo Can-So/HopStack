@@ -1,12 +1,12 @@
 {
   "name": "HopStack",
-  "version": "0.2.3",
+  "version": "1.2.6",
   "main": [
-    "./dist/scripts/hopstack.js",
-    "./dist/scripts/hopstack-components.js"
+    "./dist/scripts/ui.js",
+    "./dist/scripts/app.js"
   ],
   "description": "HopStack is a beautifully crafted application stack for software teams",
-  "homepage": "https://github.com/beardandfedora/HopStack",
+  "homepage": "https://github.com/BeardandFedora/HopStack",
   "keywords": [
     "AngularJS",
     "CoffeeScript",
