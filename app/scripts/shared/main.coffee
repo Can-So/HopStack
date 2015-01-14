@@ -10,7 +10,12 @@ angular.module('app.controllers', [])
 
         $scope.main =
             brand: 'HopStack'
-            name: 'A beautifully crafted application stack for software teams' # those which uses i18n directive can not be replaced for now.
+            name: 'Head Hopmaster' # those which uses i18n directive can not be replaced for now.
+            description: 'A beautifully crafted application stack for software teams'
+            website: 'www.hopstack.com'
+            email: 'hopmaster@hopstack.com'
+            address: '21 Hop Street Portland, OR 12345'
+            phone: '123-456-7890'
 
 
         $scope.pageTransitionOpts = [

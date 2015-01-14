@@ -1,3 +1,5 @@
+[ ![Codeship Status for BeardandFedora/HopStack](https://www.codeship.io/projects/be3d8980-3ee7-0132-ecdb-46133a0a5eef/status)](https://www.codeship.io/projects/43560)
+
 # Put some Hops in your code craft.
 
 HopStack is a beautifully crafted application stack for software teams. It's great for people who already build scalable applications using AngularJS, Bootstrap, Coffeescript, and SASS
@@ -64,7 +66,7 @@ So you can work smarter and drink more crafties, HopStack uses tools like...
 Everyone is welcome to help [contribute](CONTRIBUTING.md) and improve this project. There are several ways you can contribute:
 
 * Did you read the [contribution guidelines](CONTRIBUTING.md) yet?
-* Always branch and tag -- all StacheStack's `master` are beling to us (again, refer to [contribution guidelines](CONTRIBUTING.md))
+* Always branch and tag -- all StacheStack's `master` are belong to us (again, refer to [contribution guidelines](CONTRIBUTING.md))
 * Reporting issues (please read [issue guidelines](https://github.com/necolas/issue-guidelines))
 * Suggesting new features
 * Writing or refactoring code 

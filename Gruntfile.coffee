@@ -1,3 +1,15 @@
+##
+# Created with HopStack.
+# User: thinq4yourself
+# Date: 2014-09-08
+# Time: 12:52 AM
+# To change this template use Tools | Templates.
+##
+
+# yo - the scaffolding tool from Yeoman
+# bower - the package management tool
+# grunt - the build tool
+
 "use strict"
 LIVERELOAD_PORT = 4000
 lrSnippet = require("connect-livereload")(port: LIVERELOAD_PORT)
@@ -12,6 +24,7 @@ mountFolder = (connect, dir) ->
 # 'test/spec/{,*}*.js'
 # use this if you want to recursively match all subfolders:
 # 'test/spec/**/*.js'
+
 module.exports = (grunt) ->
     require("load-grunt-tasks") grunt
     require("time-grunt") grunt
@@ -60,7 +73,7 @@ module.exports = (grunt) ->
             options:
                 port: 3000
                 
-                # Change this to '0.0.0.0' to access the server from outside.
+                # Change this to '0.0.0.0' to access the server from outside. Use 127.0.0.1 for loal only.
                 hostname: "0.0.0.0"
 
             livereload:
@@ -235,7 +248,6 @@ module.exports = (grunt) ->
                         "components/font-awesome/fonts/*"
                         "components/weather-icons/css/*"
                         "components/weather-icons/font/*"
-
                         "fonts/**/*"
                         "i18n/**/*"
                         "images/**/*"
@@ -315,5 +327,6 @@ module.exports = (grunt) ->
 
     # grunt.registerTask "heroku:production", ["clean:dist", "useminPrepare", "concurrent:lessDist", "copy:dist", "cssmin", "concat", "uglify", "usemin"]
 
+    # Test Tasks
     grunt.registerTask "test", ["clean:tests", "jshint", "nodeunit", "stage", "connect:staging", "ghost"]
     grunt.registerTask 'karma', ['karma']

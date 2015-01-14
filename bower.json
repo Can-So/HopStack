@@ -13,8 +13,9 @@
     "Jade",
     "AngularJS",
     "Beard & Fedora",
-    "composerJS",
-    "HopStack"
+    "Firebase",
+    "HopStack",
+    "Express"
   ],
   "dependencies": {
     "jquery": "~2.1.1",
