@@ -28,7 +28,7 @@ angular.module('app', [
     'app.ui.form.ctrls'
     'app.ui.form.directives'
     'app.tables'
-    'app.task'
+    #'app.task'
     'app.chart.ctrls'
     'app.chart.directives'
     'app.page.ctrls'
